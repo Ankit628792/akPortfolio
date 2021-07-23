@@ -21,7 +21,7 @@ function Contact() {
         e.preventDefault();
         if (data.from_email && data.from_name && data.message && data.from_email.length > 3) {
             setisSending(true);
-            emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, data, 'user_MakiHHTPMRIhEyg9GFelr')
+            emailjs.send('service_sv9wgnh', 'template_mi6o31r', data, 'user_MakiHHTPMRIhEyg9GFelr')
                 .then((response) => {
                     setData({
                         from_name: '',
