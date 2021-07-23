@@ -1,0 +1,85 @@
+@media (max-width: 768px) {
+    .sidebar {
+      width: 80px;
+      position: fixed;
+      height: 100vh;
+      transform: translateX(-100px);
+      padding: 1.5rem 0;
+      transition: all 0.2s;
+    }
+    .sidebar.active {
+      transform: translateX(0);
+    }
+    .sidebar__icon {
+      transform: translateX(100px);
+      transition: all 0.2s;
+      padding: 0.5rem;
+      border-radius: 99px;
+      box-shadow: 0 0.5rem 1.5rem rgba(26, 26, 44, 0.05);
+      background: #fff;
+    }
+    .sidebar.active .sidebar__icon {
+      transform: translateX(0);
+    }
+.header__image{
+  display: none;
+}
+
+    .header{
+        padding:  2rem !important;
+      }
+      .big-h{
+        font-size: 3rem !important;
+      }
+      .small-h{
+        font-size: 2.4rem !important;
+      }
+      .span-text{
+        display: inline-block;
+      }
+      .about{
+        flex-direction: column;
+        max-height: none;
+        padding: 4rem 2rem;
+      }
+       .imgBx{
+         height: 30rem !important;
+       }
+       .btn-group .btn{
+         margin-right: 1rem !important;
+         display: inline-block !important;
+       }
+      .service .card{
+        width: 275px !important;
+      }
+      .service::before {
+        font-size: 10rem !important;
+      }
+
+    section{
+        background:#fff38e;
+        }
+        section::before{
+        display: none;
+        }
+        .container{
+        display: flex; 
+        flex-direction: column-reverse;
+        }
+        .container .contactForm{
+        width: 100%;
+        height: auto;
+        }
+        .container .contactInfo {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        }
+        .container .contactInfo ul.sci{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+  }

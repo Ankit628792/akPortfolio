@@ -1,0 +1,49 @@
+
+@media (max-width: 640px) { 
+  
+    .header{
+      padding:  2rem;
+    }
+    .big-h{
+      font-size: 2.5rem !important;
+    }
+    .small-h{
+      font-size: 2rem !important;
+    }
+    .span-text{
+      display: block;
+    }
+    .imgBx, .content {
+      margin: auto;
+      width: 100% !important;
+      padding: 1rem !important;
+     }
+     .imgBx{
+       height: 30rem !important;
+     }
+    .skills{
+      padding: 4rem 2rem;
+    }
+    .text-center {
+      text-align: right;
+      margin: 1rem 0 0.4rem 0;
+    }
+
+.break{
+  display: none;
+}
+    section{
+        align-items: flex-start;
+      }
+    .container .contactForm
+    {
+    padding: 25px;
+    }
+    .container .contactInfo
+    {
+    padding: 25px; 
+    flex-direction: column;
+    align-items: flex-start;
+    }
+  
+  }
