@@ -13,7 +13,7 @@ function Header({data}) {
         <div className="header">
             <img className="header__image" src="https://raw.githubusercontent.com/Ankit628792/ankitresume.tk/main/ankitresume.tk/assets/img/banner-image.png?token=AMROYHUOLPJZXPY7BLJF7FLBAOZ5I" alt="" />
             <h1 className="big-h">
-                Hello! <br /> I'm a&nbsp;<br />
+                Hello! <br /> I'm Ankit&nbsp;<br />
                 <span className="span-text">
                     <ReactTypingEffect
                         text={["Freelancer", "UI/UX Developer", "MERN Stack Developer"]}
