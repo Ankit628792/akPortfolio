@@ -11,22 +11,22 @@ const data = {
         "social": [
             {
                 "name": "facebook",
-                "url": "https://www.facebook.com/sonny.sangha.3",
+                "url": "",
                 "cName": "fas fa-facebook"
             },
             {
                 "name": "linkedin",
-                "url": "https://www.linkedin.com/in/saajansangha",
+                "url": "",
                 "cName": "fas fa-linkedin"
             },
             {
                 "name": "instagram",
-                "url": "https://www.instagram.com/ssssangha/",
+                "url": "",
                 "cName": "fas fa-instagram"
             },
             {
                 "name": "github",
-                "url": "https://github.com/PapaReact",
+                "url": "",
                 "cName": "fas fa-github"
             }
         ]
@@ -94,7 +94,7 @@ const data = {
                 "title": "React in One",
                 "keySkills": ["ReactJS", "Material UI", "Weather API", "Pokemon API"],
                 "image": "project/react.png",
-                "desc": "",
+                "desc": "A combined project of pure reactjs without using any addition modules. It includes the projects and techniques I've learnt during learning the ReactJS",
                 "url": "https://reactjs-demos-by-ak.web.app/"
             },
             {
