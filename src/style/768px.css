@@ -59,6 +59,7 @@
 
     section{
         background:#fff38e;
+        overflow-y: auto;
         }
         section::before{
         display: none;
