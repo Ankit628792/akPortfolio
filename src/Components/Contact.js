@@ -7,7 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 function Contact() {
-    const [isSending, setisSending] = useState(false)
+    const [isSending, setIsSending] = useState(false)
     const [data, setData] = useState({
         from_name: '',
         from_email: '',
@@ -22,9 +22,10 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (data.from_email && data.from_name && data.message && data.from_email.length > 3) {
-            setisSending(true);
+            setIsSending(true);
             emailjs.send('service_sv9wgnh', 'template_mi6o31r', data, 'user_MakiHHTPMRIhEyg9GFelr')
                   .then((response) => {
+                    setIsSending(false)
                     toast('Message Sent Successfully 🤗🥳🎉', {
                         position: "top-center",
                         autoClose: 3000,
@@ -40,6 +41,7 @@ function Contact() {
                         message: ''
                     });
                 }, (err) => {
+                    setIsSending(false);
                     toast('Failed To Send Message 🥺😥🤕', {
                         position: "top-center",
                         autoClose: 3000,
@@ -50,7 +52,6 @@ function Contact() {
                         progress: undefined,
                     });
                 });
-            setisSending(false)
         }
     };
 
