@@ -65,7 +65,7 @@
         }
         .container{
         display: flex; 
-        flex-direction: column;
+        flex-direction: column-reverse;
         }
         .container .contactForm{
         width: 100%;
