@@ -5,7 +5,7 @@ function About({ about }) {
     return (
         <div className="about flex">
             <div className="imgBx">
-                <img src="https://www.dropbox.com/s/11sghf1s35ck5aa/ankit.jpg" alt="" />
+                <img src="https://raw.githubusercontent.com/Ankit628792/Ankit_Resume/master/ankit1.jpg?token=AMROYHWWJ4DDHIDWCVSDXQ3BAVSLI" alt="" />
             </div>
             <div className="content flex fd-column">
                 <h1 className="small-h">
