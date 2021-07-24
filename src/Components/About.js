@@ -1,10 +1,11 @@
 import React from 'react'
 import Button from './Button'
+import {NavLink} from 'react-router-dom'
 function About({ about }) {
     return (
         <div className="about flex">
             <div className="imgBx">
-                <img src="https://raw.githubusercontent.com/Ankit628792/Ankit_Resume/master/ankit1.jpg?token=AMROYHQJ2XDYT7P7ETMJWKTBAOZYU" alt="" />
+                <img src="https://www.dropbox.com/s/11sghf1s35ck5aa/ankit.jpg" alt="" />
             </div>
             <div className="content flex fd-column">
                 <h1 className="small-h">
@@ -15,8 +16,8 @@ function About({ about }) {
                 <p> <strong> e-Mail : </strong> {about.email} </p> <br />
                 <p> <strong> Phone: </strong> {about.number} </p>
                 <div className="btn-group">
-                    <Button text="Hire me" />
-                    <Button text="Download CV" />
+                    <NavLink to="/contact"> <Button text="Hire me" /> </NavLink>
+                    <a href="https://drive.google.com/file/d/1L8EszxVaDoElwJALdc5YqaTmFNtwZ4zn/view" rel="nonreferrer" target="_blank"><Button text="Download CV" /></a>
                 </div>
             </div>
         </div>
