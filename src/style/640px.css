@@ -33,7 +33,7 @@
   display: none;
 }
     section{
-        align-items: flex-start;
+        align-items: flex-end;
       }
     .container .contactForm
     {
