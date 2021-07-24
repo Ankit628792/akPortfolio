@@ -5,6 +5,7 @@
       height: 100vh;
       transform: translateX(-100px);
       padding: 1.5rem 0;
+      padding-bottom: 2rem;
       transition: all 0.2s;
     }
     .sidebar.active {
@@ -64,7 +65,7 @@
         }
         .container{
         display: flex; 
-        flex-direction: column-reverse;
+        flex-direction: column;
         }
         .container .contactForm{
         width: 100%;
