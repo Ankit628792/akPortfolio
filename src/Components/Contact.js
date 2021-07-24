@@ -3,6 +3,8 @@ import Button from './Button'
 import RoomIcon from '@material-ui/icons/Room';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 function Contact() {
     const [isSending, setisSending] = useState(false)
@@ -22,15 +24,31 @@ function Contact() {
         if (data.from_email && data.from_name && data.message && data.from_email.length > 3) {
             setisSending(true);
             emailjs.send('service_sv9wgnh', 'template_mi6o31r', data, 'user_MakiHHTPMRIhEyg9GFelr')
-                .then((response) => {
+                  .then((response) => {
+                    toast('Message Sent Successfully 🤗🥳🎉', {
+                        position: "top-center",
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: false,
+                        draggable: true,
+                        progress: undefined,
+                    });
                     setData({
                         from_name: '',
                         from_email: '',
                         message: ''
                     });
-                    console.log('Message sent')
                 }, (err) => {
-                    window.alert('Error in sending message !')
+                    toast('Failed To Send Message 🥺😥🤕', {
+                        position: "top-center",
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: false,
+                        draggable: true,
+                        progress: undefined,
+                    });
                 });
             setisSending(false)
         }
