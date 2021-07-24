@@ -3,7 +3,7 @@ import Button from './Button'
 import RoomIcon from '@material-ui/icons/Room';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com';
 function Contact() {
@@ -105,7 +105,8 @@ function Contact() {
                     </form>
                 </div>
             </div>
-
+            
+            <ToastContainer />
 
         </section>
     )
