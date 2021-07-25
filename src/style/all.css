@@ -312,7 +312,8 @@ width: 100%;
   content: 'About';
     position: absolute;
     top: 50%;
-    right: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 16rem;
     color: rgba(0,0,0,0.02);
 }
