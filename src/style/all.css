@@ -334,6 +334,7 @@ width: 100%;
   border-radius: 0.8rem;
   padding-right: 2rem;
   min-height: 80vh;
+  box-shadow: 0 0 2rem #e6e6fa;
 }
 .project h1{
   line-height: 1.5;
@@ -389,7 +390,7 @@ width: 100%;
 
 .main__inner{
   overflow-y: auto;
-  backgound: #fbfdff;
+  background: #fbfdff;
 }
 
 .service{
