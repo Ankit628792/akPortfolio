@@ -25,7 +25,6 @@
        position: fixed;
         top: 50%;
         left: 50%;
-        right: -10rem;
         transform: translate(-50%, -50%);
         font-size: 12rem;
     }
