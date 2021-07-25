@@ -6,6 +6,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import RoomServiceIcon from '@material-ui/icons/RoomService';
 import AssistantIcon from '@material-ui/icons/Assistant';
+import ReactTooltip from "react-tooltip";
 
 const iconStyle = (fontsize) => {
   return {
@@ -30,6 +31,8 @@ function Sidebar() {
           exact
           className="sidebar__menuItem"
           activeClassName="active"
+          data-tip="Home"
+          data-for="sidebarTooltip"
           onClick={toggleSidebar}
         >
           <HomeRoundedIcon
@@ -41,6 +44,8 @@ function Sidebar() {
           to="/about"
           className="sidebar__menuItem"
           activeClassName="active"
+          data-tip="About"
+          data-for="sidebarTooltip"
           onClick={toggleSidebar}
         >
           <InfoIcon
@@ -52,6 +57,8 @@ function Sidebar() {
           to="/skills"
           className="sidebar__menuItem"
           activeClassName="active"
+          data-tip="Skills"
+          data-for="sidebarTooltip"
           onClick={toggleSidebar}
         >
           <AssistantIcon
@@ -63,6 +70,8 @@ function Sidebar() {
           to="/service"
           className="sidebar__menuItem"
           activeClassName="active"
+          data-tip="Services"
+          data-for="sidebarTooltip"
           onClick={toggleSidebar}
         >
           <RoomServiceIcon
@@ -74,6 +83,8 @@ function Sidebar() {
           to="/projects"
           className="sidebar__menuItem"
           activeClassName="active"
+          data-tip="Projects"
+          data-for="sidebarTooltip"
           onClick={toggleSidebar}
         >
           <WorkOutlineIcon
@@ -86,6 +97,8 @@ function Sidebar() {
           to="/contact"
           className="sidebar__menuItem"
           activeClassName="active"
+          data-tip="Contact"
+          data-for="sidebarTooltip"
           onClick={toggleSidebar}
         >
           <PermContactCalendarIcon
@@ -95,13 +108,13 @@ function Sidebar() {
         </NavLink>
       </div>
       
-      {/* <ReactTooltip
+       <ReactTooltip
         place="right"
         className="app__toolTip"
         id="sidebarTooltip"
         backgroundColor="#1a1a2cee"
         effect="solid"
-      /> */}
+      />
     </div>
   );
 }
