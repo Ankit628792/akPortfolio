@@ -69,7 +69,10 @@ main{
   transform: scale(1.05);
 }
 
-
+.app__toolTip {
+  border-radius: 0.5rem !important;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.15) !important;
+}
 
 
 section
