@@ -24,6 +24,7 @@ main{
   min-width: 6rem;
   width: clamp(80px, 10vw, 100px);
   max-height: 100vh;
+  min-height: 100vh;
   position: relative;
   z-index: 99;
   top: 0;
