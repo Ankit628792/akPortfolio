@@ -5,7 +5,7 @@ function About({ about }) {
     return (
         <div className="about flex">
             <div className="imgBx">
-                <img src="https://raw.githubusercontent.com/Ankit628792/Ankit_Resume/master/ankit1.jpg?token=AMROYHWWJ4DDHIDWCVSDXQ3BAVSLI" alt="" />
+                <img src={about.image} alt="" />
             </div>
             <div className="content flex fd-column">
                 <h1 className="small-h">
@@ -17,7 +17,7 @@ function About({ about }) {
                 <p> <strong> Phone: </strong> {about.number} </p>
                 <div className="btn-group">
                     <NavLink to="/contact"> <Button text="Hire me" /> </NavLink>
-                    <a href="https://drive.google.com/file/d/1L8EszxVaDoElwJALdc5YqaTmFNtwZ4zn/view" rel="noreferrer" target="_blank"><Button text="Download CV" /></a>
+                    <a href={about.resumedownload} rel="noreferrer" target="_blank"><Button text="Download CV" /></a>
                 </div>
             </div>
         </div>
