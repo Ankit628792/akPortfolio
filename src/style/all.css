@@ -483,6 +483,7 @@ width: 100%;
   max-width: 768px;
 }
 
+/*
 .sidebar__icon{
   animation: animateLogo 1.2s linear infinite;
   animation-delay: 5s;
@@ -504,3 +505,4 @@ width: 100%;
     transform: scale(1);
   }
 }
+*/
