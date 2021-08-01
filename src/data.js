@@ -117,7 +117,7 @@ const data = {
                 "keySkills": ["ReactJS", "Spotify API", "Firebase", "Spotify Auth"],
                 "image": "project/spotify.png",
                 "desc": "A Spotify web app that includes the functionality of original Spotify App i.e. the fetching of user playlists, user data, their songs etc. It provides a great user experience",
-                "url": "https://github.com/Ankit628792/Spotify-Clone"
+                "url": "https://spotify-rebuild.vercel.app/"
             },
             {
                 "title": "Netflix-Clone",
