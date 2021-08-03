@@ -124,12 +124,12 @@ const data = {
                 "keySkills": ["ReactJS", "IMDB API", "Firebase"],
                 "image": "project/netflix.png",
                 "desc": "A Netflix clone that looks like similar to official netflix. It includes IMDB Api for the movie data and allows the user to view the trailer of selected movie.",
-                "url": "https://netflix-clone-89853.web.app/"
+                "url": "https://netflix-rebuild.vercel.app/"
             },
             {
                 "title": "Zoom-Clone",
                 "keySkills": ["Handlebars","NodeJS","ExpressJs","Socket.io","Peer JS"],
-                "image": "project/zoom.png",
+                "image": "project/zoom-clone.png",
                 "desc": "A Zoom clone that has live video and audio sharing functionality. It also have a chat system like original one and meeting joining, leaving functionality.",
                 "url": "https://zoom-clone-by-ak.herokuapp.com/"
             },
