@@ -129,7 +129,7 @@ const data = {
             {
                 "title": "Zoom-Clone",
                 "keySkills": ["Handlebars","NodeJS","ExpressJs","Socket.io","Peer JS"],
-                "image": "project/zoom-clone.png",
+                "image": "project/zoom.png",
                 "desc": "A Zoom clone that has live video and audio sharing functionality. It also have a chat system like original one and meeting joining, leaving functionality.",
                 "url": "https://zoom-clone-by-ak.herokuapp.com/"
             },
