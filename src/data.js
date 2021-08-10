@@ -89,7 +89,7 @@ const data = {
                 "keySkills": ["NextJS", "Redux Thunk", "NextAuth","TailwindCSS", "Stripe", "Web API", "Firebase", "Web hooks"],
                 "image": "project/amazon.png",
                 "desc": "Amazon design with NextJs, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication (Firebase).",
-                "url": "https://amazon-clone2-3q5ouixdt-final.vercel.app/"
+                "url": "https://amazon-clone2.vercel.app/"
             },
             {
                 "title": "React in One",
