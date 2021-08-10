@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
 import { NavLink } from "react-router-dom";
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
@@ -7,6 +7,8 @@ import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import RoomServiceIcon from '@material-ui/icons/RoomService';
 import AssistantIcon from '@material-ui/icons/Assistant';
 import ReactTooltip from "react-tooltip";
+import { ThemeContext } from "../App";
+import DarkModeToggle from "react-dark-mode-toggle";
 
 const iconStyle = (fontsize) => {
   return {
@@ -18,13 +20,26 @@ const iconStyle = (fontsize) => {
 };
 
 function Sidebar() {
+  const {state, dispatch} = useContext(ThemeContext);
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
   const [sidebarActive, setSidebarActive] = useState(false);
   const toggleSidebar = () =>
-    setSidebarActive((sidebarActive) => !sidebarActive);
+  setSidebarActive((sidebarActive) => !sidebarActive);
+  
+  const handleMode = () => {
+    setIsDarkMode((isDarkMode) => !isDarkMode);
+    dispatch({type: 'Theme', payload: (!isDarkMode)})
+  }
 
   return (
     <div className={`sidebar ${sidebarActive ? "active" : ""}`}>
       <h1 className="sidebar__icon" onClick={toggleSidebar}><span className="span-text" style={{display: 'inline-block'}}>a</span>k</h1>
+      <DarkModeToggle
+      onChange={handleMode}
+      checked={isDarkMode}
+      speed={3}
+      size={60}
+    />
       <div className="sidebar__menu">
         <NavLink
           to="/"

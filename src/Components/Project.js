@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from './Button'
+import { ThemeContext } from "../App";
+
 function Project({ project, flex }) {
+    const {state, dispatch} = useContext(ThemeContext);
     return (
         <div className={ flex ? 'flex project' : ' flex-reverse project'}>
             <div className="content">
@@ -15,7 +18,7 @@ function Project({ project, flex }) {
                    <a href={project.url} target="_blank" rel="noreferrer"> <Button text="View Project" /> </a>
             </div>
             <div className="imgBx">
-                <img src={project.image} alt="" />
+                <img src={project.image} style={{filter: `${state ? 'invert(1) saturate(1) hue-rotate(-100deg)' : 'none'}`}} alt="" />
             </div>
         </div>
     )

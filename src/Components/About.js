@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Button from './Button'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { ThemeContext } from "../App";
+
 function About({ about }) {
+    const { state, dispatch } = useContext(ThemeContext);
+
     return (
         <div className="about flex">
             <div className="imgBx">
-                <img src={about.image} alt="" />
+                <img src={about.image} style={{ filter: `${state ? 'invert(1) saturate(1) hue-rotate(-100deg)' : 'none'}` }} alt="" />
             </div>
             <div className="content flex fd-column">
                 <h1 className="small-h">

@@ -355,7 +355,7 @@ width: 100%;
   box-shadow: 0 0 2rem #fbe9492f;
 }
 .skills{
-  width: 90vw;
+  width: 100%;
   min-height: 90vh;
   padding: 5rem;
   text-align: center;
@@ -470,7 +470,7 @@ width: 100%;
 
 .service .card .box .box__content p{
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 400;
   z-index: 1;
   transition: 0.5s;
 }
