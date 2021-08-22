@@ -39,19 +39,19 @@ function App() {
         <div className="main__inner">
           <Switch location={location} key={location.pathname}>
             <Route exact path="/">
-              <Header data={data.personal} />
+              <Header data={data[0].personal} />
             </Route>
             <Route exact path="/about">
-              <About about={data.personal} />
+              <About about={data[0].personal} />
             </Route>
             <Route exact path="/skills">
-              <Skills skills={data.skills} />
+              <Skills skills={data[0].skills} />
             </Route>
             <Route exact path="/service">
-              <Service services={data.service} />
+              <Service services={data[0].service} />
             </Route>
             <Route exact path="/projects">
-              <AllProjects projects={data.projects} />
+              <AllProjects projects={data[0].projects} />
             </Route>
             <Route exact path="/contact">
               <Contact />
