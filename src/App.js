@@ -29,8 +29,9 @@ function App() {
   }
   
   useEffect(() => {
-    fetch('https://sample-api-data.vercel.app/api/akPortfolio').then(res => res.json()).then(response => setData(response));
+    fetch(`process.env.DataURI`).then(res => res.json()).then(response => setData(response));
   }, []);
+  console.log('data', data);
   return (
     <>
     <ThemeContext.Provider value={{state, dispatch}}>
