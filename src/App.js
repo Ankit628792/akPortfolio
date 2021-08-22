@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Sidebar from './Components/Sidebar'
 import Service from './Components/Service';
 import Header from './Components/Header';
 import { Switch, Route, useLocation } from 'react-router-dom'
 import About from './Components/About';
-import data from './data'
 
 import AllProjects from './Components/AllProjects';
 import Contact from './Components/Contact';
@@ -16,21 +15,22 @@ import { initialState, reducer } from './reducer';
 export const ThemeContext = createContext();
 
 function App() {
+  const [data, setData] = useState();
   const location = useLocation();
   const [state, dispatch] = useReducer(reducer, initialState)
   const head = document.getElementById('root');
   const imgList = document.getElementsByTagName('img');
-  console.log(imgList)
-  // imgList.map((item) => console.log(item))
+  
   if(state){
     head.style.filter = 'invert(1) hue-rotate(100deg) saturate(1.2)';
-    // imgList.style.filter = 'invert(1) saturate(1) hue-rotate(-100deg) !important'
   }
   else{
     head.style.filter = 'none'
-    // imgList.style.filter = 'none'
   }
-  console.log(state)
+  
+  useEffect(() => {
+    fetch('https://sample-api-data.vercel.app/api/akPortfolio').then(res => res.json()).then(response => setData(response));
+  }, []);
   return (
     <>
     <ThemeContext.Provider value={{state, dispatch}}>
