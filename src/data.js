@@ -78,11 +78,18 @@ const data = {
     },
         "projects": [
             {
+                "title": "Airbnb Clone",
+                "keySkills": ["NextJS", "TailwindCSS","React Calendar", "Mapbox", "Geo Location"],
+                "image": "project/airbnb.png",
+                "desc": "Airbnb Rebuild with hotel booking functionality including calendar, hotel search, maps and amazing responsive ui.",
+                "url": "https://airbnb-rebuild.vercel.app/"
+            },
+            {
                 "title": "ShareBook Web App",
                 "keySkills": ["ReactJS","Redux", "NodeJS", "ExpressJs", "MongoDB", "Socket.io", "TailwindCSS", "Framer-Motion"],
                 "image": "project/sharebook.png",
                 "desc": "ShareBook is an intiative or a Book Sharing platform where user can get and share the book they want without any cost. It includes chat support system to contact book owner and many other functionalities.",
-                "url": "http://mysharebook.herokuapp.com/"
+                "url": "https://mysharebook.herokuapp.com/"
             },
             {
                 "title": "Amazon Clone",
