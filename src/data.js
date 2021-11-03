@@ -78,7 +78,14 @@ const data = {
     },
         "projects": [
             {
-                "title": "Airbnb Clone",
+                "title": "Google Docs Rebuild",
+                "keySkills": ["NextJS", "TailwindCSS","Material-Tailwind", "Draft.js", "Firestore", "Firebase"],
+                "image": "project/google-docs.png",
+                "desc": "Google docs with google authetication, create, update and delete documents, with a very beutiful text editor and user experience.",
+                "url": "https://google-docs-rebuild.vercel.app/"
+            },
+             {
+                "title": "Airbnb Rebuild",
                 "keySkills": ["NextJS", "TailwindCSS","React Calendar", "Mapbox", "Geo Location"],
                 "image": "project/airbnb.png",
                 "desc": "Airbnb Rebuild with hotel booking functionality including calendar, hotel search, maps and amazing responsive ui.",
