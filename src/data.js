@@ -81,7 +81,7 @@ const data = {
                 "title": "Google Docs Rebuild",
                 "keySkills": ["NextJS", "TailwindCSS","Material-Tailwind", "Draft.js", "Firestore", "Firebase"],
                 "image": "project/google-docs.png",
-                "desc": "Google docs with google authetication, create, update and delete documents, with a very beutiful text editor and user experience.",
+                "desc": "Google docs with google authentication, create, update and delete documents, with a very beautiful text editor and user experience.",
                 "url": "https://google-docs-rebuild.vercel.app/"
             },
              {
