@@ -101,7 +101,7 @@ const data = {
         {
             "title": "Instagram 2.0",
             "keySkills": ["NextJS", "TailwindCSS", "Recoil", "Material-Tailwind", "Draft.js", "Firestore", "Firebase", "NextAuth", "Refresh token"],
-            "image": "project/instaram.png",
+            "image": "project/instagram.png",
             "desc": "An Instagram clone with feed, add post, Google signin, like, comment functionality designed and developed with NextJs, TailwindCSS, Recoil, NextAuth and much more...",
             "url": "https://instagram-rebuild.vercel.app/"
         },
