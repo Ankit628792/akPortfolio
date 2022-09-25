@@ -79,7 +79,7 @@ const data = {
     "projects": [
         {
             "title": "Rekindle",
-            "keySkills": ["React Native", "TailwindCSS", "Redux", "NodeJS", "MongoDB", "Express JS", "AWS", "Firebase", "Cashfree", "Push Notifications", "Express JS"],
+            "keySkills": ["React Native", "TailwindCSS", "Redux", "NodeJS", "MongoDB", "Express JS", "AWS", "Firebase", "Cashfree", "Push Notifications"],
             "image": "project/rekindle.png",
             "desc": "Rekindle is a dating app to empower divorced, widowed & separated people by offering them exclusivity without a doubt. We are trying to build a community of verified profiles to weed out irrelevancy & save your time in finding your love!",
             "url": "https://linktr.ee/rekindleclub"
