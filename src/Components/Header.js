@@ -11,15 +11,15 @@ function Header({data}) {
     return (
         <>
         <div className="header">
-            <img className="header__image" src="https://raw.githubusercontent.com/Ankit628792/ankitresume.tk/main/ankitresume.tk/assets/img/banner-image.png?token=AMROYHUOLPJZXPY7BLJF7FLBAOZ5I" alt="" />
+            <img className="header__image" src="image/banner-image.png" alt="" />
             <h1 className="big-h">
                 Hello! <br /> I'm Ankit Kumar&nbsp;<br />
                 <span className="span-text">
                     <ReactTypingEffect
-                        text={["Freelancer", "UI/UX Developer", "MERN Stack Developer"]}
+                        text={["Freelancer", "UI/UX Developer", "Full Stack Developer"]}
                     />
                 </span>
-                <br className="break" />Based in <span className="span-text">New Delhi </span>
+                <br className="break" />Based in <span className="span-text">India</span>
             </h1>
             <NavLink to="/contact">
             <Button text="Let's Chat" />
