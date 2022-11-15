@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { ThemeContext } from "../App";
 
 function About({ about }) {
-    const { state, dispatch } = useContext(ThemeContext);
+    const { state } = useContext(ThemeContext);
 
     return (
         <div className="about flex">

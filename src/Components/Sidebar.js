@@ -20,26 +20,26 @@ const iconStyle = (fontsize) => {
 };
 
 function Sidebar() {
-  const {state, dispatch} = useContext(ThemeContext);
+  const { dispatch } = useContext(ThemeContext);
   const [isDarkMode, setIsDarkMode] = useState(() => false);
   const [sidebarActive, setSidebarActive] = useState(false);
   const toggleSidebar = () =>
-  setSidebarActive((sidebarActive) => !sidebarActive);
-  
+    setSidebarActive((sidebarActive) => !sidebarActive);
+
   const handleMode = () => {
     setIsDarkMode((isDarkMode) => !isDarkMode);
-    dispatch({type: 'Theme', payload: (!isDarkMode)})
+    dispatch({ type: 'Theme', payload: (!isDarkMode) })
   }
 
   return (
     <div className={`sidebar ${sidebarActive ? "active" : ""}`}>
-      <h1 className="sidebar__icon" onClick={toggleSidebar}><span className="span-text" style={{display: 'inline-block'}}>a</span>k</h1>
+      <h1 className="sidebar__icon" onClick={toggleSidebar}><span className="span-text" style={{ display: 'inline-block' }}>a</span>k</h1>
       <DarkModeToggle
-      onChange={handleMode}
-      checked={isDarkMode}
-      speed={3}
-      size={60}
-    />
+        onChange={handleMode}
+        checked={isDarkMode}
+        speed={3}
+        size={60}
+      />
       <div className="sidebar__menu">
         <NavLink
           to="/"
@@ -107,7 +107,7 @@ function Sidebar() {
             style={iconStyle(30)}
           />
         </NavLink>
-        
+
         <NavLink
           to="/contact"
           className="sidebar__menuItem"
@@ -122,8 +122,8 @@ function Sidebar() {
           />
         </NavLink>
       </div>
-      
-       <ReactTooltip
+
+      <ReactTooltip
         place="right"
         className="app__toolTip"
         id="sidebarTooltip"

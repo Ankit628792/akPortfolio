@@ -19,7 +19,6 @@ function App() {
   const location = useLocation();
   const [state, dispatch] = useReducer(reducer, initialState)
   const head = document.getElementById('root');
-  const imgList = document.getElementsByTagName('img');
 
   if(state){
     head.style.filter = 'invert(1) hue-rotate(100deg) saturate(1.2)';
