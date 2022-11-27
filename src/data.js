@@ -74,9 +74,30 @@ const data = {
     ],
     "skills": {
         "desc": "Over 2 years of experience working with these skills and providing a best solution to the client",
-        "images": ["image/html.svg", "image/css.svg", "image/js.svg", "image/mongo.svg", "image/express.svg", "image/react.svg", "image/node.svg", "image/redux.svg", "image/bootstrap.svg", "image/tailwind.svg", "image/material.png", "image/firebase.png", "image/next.svg"],
+        "images": ["image/html.svg", "image/css.svg", "image/js.svg", "image/mongo.svg", "image/express.svg", "image/react.svg", "image/node.svg", "image/redux.svg", "image/bootstrap.svg", "image/tailwind.svg", "image/material.png", "image/firebase.png", "image/next.svg", "image/electron.svg", "image/graphql.svg", "image/mysql.svg", "image/postgresql.svg", "image/typescript.svg"],
     },
     "projects": [
+        {
+            "title": "Nian Devs",
+            "keySkills": ["NextJS", "TailwindCSS", "TypeScript", "MongoDB", "Cloudinary", "Serverless APIs", "Google Auth"],
+            "image": "project/nianDevs.png",
+            "desc": "A web application, used to manage the profiles of developers and to connect them with hiring teams looking for freelancers, part-time, and full-time. Developers can use the too! to manage their own profiles. Powered with PWA and mode switching",
+            "url": "https://nian-devs.vercel.app/"
+        },
+        {
+            "title": "IPU Manager",
+            "keySkills": ["NextJS", "TailwindCSS", "MongoDB", "Cloudinary", "Serverless APIs", "JWT Auth"],
+            "image": "project/ipuManager.png",
+            "desc": "A Credentials provider service built for a university to manage and assign emails and wifi services access, that can be control by university authorities, move online, to reduce the paperwork to ease the work of student and staff to operate from anywhere.",
+            "url": "https://ipu-manager.vercel.app/"
+        },
+        {
+            "title": "Reddit 2.0",
+            "keySkills": ["NextJS", "TailwindCSS", "Supabase", "GraphQL", "Stepzen", "Cloudinary", "Serverless APIs", "Reddit Auth", "Google Auth"],
+            "image": "project/reddit.png",
+            "desc": "A Reddit clone with feed, add post, Google signin, Reddit Signin, voting, comment functionality designed and developed with NextJs, TailwindCSS, NextAuth, SQL database with GraphQL and much more... powered with PWA.",
+            "url": "https://reddit-rebuild.vercel.app/"
+        },
         {
             "title": "Rekindle",
             "keySkills": ["React Native", "TailwindCSS", "Redux", "NodeJS", "MongoDB", "Express JS", "AWS", "Firebase", "Cashfree", "Push Notifications"],
@@ -86,7 +107,7 @@ const data = {
         },
         {
             "title": "CryptoPunk",
-            "keySkills": ["NextJS", "TailwindCSS", "Redux Toolkit", "Ant Design", "MongoDB", "Moralis", "Cloudinary", "Blockchain", "Web3", "Crypto APIs", "Serverless APIs", "Metamask", "ALchemy", "React Charts"],
+            "keySkills": ["NextJS", "TailwindCSS", "Redux Toolkit", "Ant Design", "MongoDB", "Moralis", "Cloudinary", "Blockchain", "Web3", "Crypto APIs", "Serverless APIs", "Metamask", "Alchemy", "React Charts"],
             "image": "project/cryptopunk.png",
             "desc": "An application based on deep learning and crypto powered by blockchain technology. This application consists of crypto market analysis, crypto prediction, NFTs listing and owning, sending and receiving crypto- blockchain smart contracts, and a blockchain authenticated user crypto profile.",
             "url": "https://cryptopunk-beta.vercel.app/"
@@ -102,14 +123,14 @@ const data = {
             "title": "Instagram 2.0",
             "keySkills": ["NextJS", "TailwindCSS", "Recoil", "Material-Tailwind", "Draft.js", "Firestore", "Firebase", "NextAuth", "Refresh token"],
             "image": "project/instagram.png",
-            "desc": "An Instagram clone with feed, add post, Google signin, like, comment functionality designed and developed with NextJs, TailwindCSS, Recoil, NextAuth and much more...",
+            "desc": "An Instagram clone with feed, add post, Google signin, like, comment functionality designed and developed with NextJs, TailwindCSS, Recoil, NextAuth and much more... powered with PWA.",
             "url": "https://instagram-rebuild.vercel.app/"
         },
         {
             "title": "Google Docs Rebuild",
             "keySkills": ["NextJS", "TailwindCSS", "Material-Tailwind", "Draft.js", "Firestore", "Firebase"],
             "image": "project/google-docs.png",
-            "desc": "A Fully working Google Docs Clone that works with Google Authentication and Rich Text Editor. This application is build with NextJs, NextAuth, TailwindCSS, FireStore, Material Ui and Draft.js",
+            "desc": "A Fully working Google Docs Clone that works with Google Authentication and Rich Text Editor. This application is build with NextJs, NextAuth, TailwindCSS, FireStore, Material Ui and Draft.js. Powered with PWA.",
             "url": "https://google-docs-rebuild.vercel.app/"
         },
         {
@@ -130,7 +151,7 @@ const data = {
             "title": "Amazon 2.0",
             "keySkills": ["NextJS", "Redux Thunk", "NextAuth", "TailwindCSS", "Stripe", "Web API", "Firebase", "Web hooks"],
             "image": "project/amazon.png",
-            "desc": "Amazon design with NextJs, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication (Firebase).",
+            "desc": "Amazon design with NextJs, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication (Firebase). Powered with PWA",
             "url": "https://amazon-clone2.vercel.app/"
         },
         //             {
