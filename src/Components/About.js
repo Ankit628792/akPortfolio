@@ -18,7 +18,7 @@ function About({ about }) {
                 <p>{about.about} </p> <br />
                 <p>{about.about2} </p> <br />
                 <p> <strong> e-Mail : </strong> {about.email} </p> <br />
-                <p> <strong> Phone: </strong> {about.number} </p>
+                {/* <p> <strong> Phone: </strong> {about.number} </p> */}
                 <div className="btn-group">
                     <NavLink to="/contact"> <Button text="Hire me" /> </NavLink>
                     <a href={about.resumedownload} rel="noreferrer" target="_blank"><Button text="Download CV" /></a>
