@@ -27,7 +27,7 @@ function Header({data}) {
             <ul className="social flex">
                 <li><a href="https://github.com/Ankit628792/" target="_blank" rel="noreferrer"><GitHubIcon className="social__icon" /></a></li>
                 <li><a href="https://www.linkedin.com/in/ankit628792/" target="_blank" rel="noreferrer"><LinkedInIcon className="social__icon" /></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100011619455942" target="_blank" rel="noreferrer"><FacebookIcon className="social__icon" /></a></li>
+                {/* <li><a href="https://www.facebook.com/profile.php?id=100011619455942" target="_blank" rel="noreferrer"><FacebookIcon className="social__icon" /></a></li> */}
                 <li><a href="https://www.instagram.com/ankit_628792/" target="_blank" rel="noreferrer"><InstagramIcon className="social__icon" /></a></li>
             </ul>
         </div>
