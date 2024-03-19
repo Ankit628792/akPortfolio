@@ -5,7 +5,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 function Contact() {
     const [isSending, setIsSending] = useState(false)
     const [data, setData] = useState({
@@ -23,35 +23,54 @@ function Contact() {
         e.preventDefault();
         if (data.from_email && data.from_name && data.message && data.from_email.length > 3) {
             setIsSending(true);
-            emailjs.send('service_sv9wgnh', 'template_mi6o31r', data, 'user_MakiHHTPMRIhEyg9GFelr')
-                  .then((response) => {
-                    setIsSending(false)
-                    toast('Message Sent Successfully 🤗🥳🎉', {
-                        position: "top-center",
-                        autoClose: 3000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: false,
-                        draggable: true,
-                        progress: undefined,
-                    });
-                    setData({
-                        from_name: '',
-                        from_email: '',
-                        message: ''
-                    });
-                }, (err) => {
-                    setIsSending(false);
-                    toast('Failed To Send Message 🥺😥🤕', {
-                        position: "top-center",
-                        autoClose: 3000,
-                        hideProgressBar: false,
-                        closeOnClick: true,
-                        pauseOnHover: false,
-                        draggable: true,
-                        progress: undefined,
-                    });
-                });
+            toast('Mail Service not available', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+            })
+            toast('Please contact on linkedIn', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            })
+            setIsSending(false)
+            // emailjs.send('service_sv9wgnh', 'template_mi6o31r', data, 'user_MakiHHTPMRIhEyg9GFelr')
+            //     .then((response) => {
+            //         setIsSending(false)
+            //         toast('Message Sent Successfully 🤗🥳🎉', {
+            //             position: "top-center",
+            //             autoClose: 3000,
+            //             hideProgressBar: false,
+            //             closeOnClick: true,
+            //             pauseOnHover: false,
+            //             draggable: true,
+            //             progress: undefined,
+            //         });
+            //         setData({
+            //             from_name: '',
+            //             from_email: '',
+            //             message: ''
+            //         });
+            //     }, (err) => {
+            //         setIsSending(false);
+            //         toast('Failed To Send Message 🥺😥🤕', {
+            //             position: "top-center",
+            //             autoClose: 3000,
+            //             hideProgressBar: false,
+            //             closeOnClick: true,
+            //             pauseOnHover: false,
+            //             draggable: true,
+            //             progress: undefined,
+            //         });
+            //     });
         }
     };
 
@@ -106,7 +125,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-            
+
             <ToastContainer />
 
         </section>

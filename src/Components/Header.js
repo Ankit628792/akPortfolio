@@ -1,11 +1,9 @@
 import React from 'react'
 import Button from './Button'
 import ReactTypingEffect from 'react-typing-effect';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import { NavLink } from 'react-router-dom';
 
 function Header({ data }) {
     return (
