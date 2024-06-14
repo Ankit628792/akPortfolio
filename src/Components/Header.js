@@ -16,7 +16,7 @@ function Header({ data }) {
                         <ReactTypingEffect
                             speed={100}
                             eraseSpeed={50}
-                            text={["Freelancer", "UI/UX Developer", "Full Stack Developer"]}
+                            text={["Freelancer", "UI/UX Developer", "Product Engineer"]}
                         />
                     </span>
                     <br className="break" />Based in <span className="span-text">India</span>

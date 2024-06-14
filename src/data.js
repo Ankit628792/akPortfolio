@@ -1,10 +1,10 @@
 const data = {
     "personal": {
         "name": "Ankit",
-        "occupation": "I'm a freelancer, UI/UX Developer, Full Stack Developer",
+        "occupation": "I'm a Freelancer, UI/UX Developer, Product Engineer",
         "email": "ankit628792@gmail.com",
         "number": "+91 9818451195",
-        "about": "I am a dynamic Full Stack Developer, dedicated to pushing the boundaries of web and mobile application development, with more than two years' expertise. Creating intuitive, engaging, and user-friendly experiences that delight users, faces new challenges and opportunities to grow my skillset, works on latest technologies and techniques. I'm eager to join a team and contribute to a company's success.",
+        "about": "I am a dynamic Product Engineer, dedicated to pushing the boundaries of web and mobile application development, with more than three years' expertise. Creating intuitive, engaging, and user-friendly experiences that delight users, faces new challenges and opportunities to grow my skillset, works on latest technologies and techniques. I'm eager to join a team and contribute to a company's success.",
         "about2": "Passion, collaboration, and a proactive mindset define my approach. Whether it's optimizing user experiences or navigating complex infrastructures, I thrive on challenges. Explore my digital journey, and let's connect to unlock innovation together.",
         "website": "https://ankitkumar.vercel.app",
         "image": "image/profilePic.jpg",
@@ -73,7 +73,7 @@ const data = {
         }
     ],
     "skills": {
-        "desc": "Over 2 years of experience working with these skills and providing a best solution to the client",
+        "desc": "Over 3 years of experience working with these skills and providing a best solution to the client",
         "images": ["image/html.svg", "image/css.svg", "image/js.svg", "image/mongo.svg", "image/express.svg", "image/react.svg", "image/node.svg", "image/redux.svg", "image/bootstrap.svg", "image/tailwind.svg", "image/material.png", "image/firebase.png", "image/next.svg", "image/electron.svg", "image/graphql.svg", "image/mysql.svg", "image/postgresql.svg", "image/typescript.svg"],
     },
     "projects": [
