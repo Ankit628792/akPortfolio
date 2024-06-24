@@ -21,7 +21,7 @@ function About({ about }) {
                 {/* <p> <strong> Phone: </strong> {about.number} </p> */}
                 <div className="btn-group">
                     <NavLink to="/contact"> <Button text="Hire me" /> </NavLink>
-                    <a href={about.resumedownload} rel="noreferrer" target="_blank"><Button text="Download CV" /></a>
+                    <a href={about.resumedownload} rel="noreferrer" target="_blank"><Button text="Download Resume" /></a>
                 </div>
             </div>
         </div>

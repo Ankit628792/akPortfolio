@@ -23,7 +23,7 @@ function Header({ data }) {
                 </h1>
                 {/* <NavLink to="/contact"> */}
                 <a href={data.resumedownload} rel="noreferrer" target="_blank">
-                    <Button text="View CV" />
+                    <Button text="View Resume" />
                 </a>
                 {/* </NavLink> */}
                 <ul className="social flex">
