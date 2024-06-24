@@ -7,7 +7,7 @@ const data = {
         "about": "Over the past three years, I’ve been specialized in mobile and web application development, helping companies and entrepreneurs to develop and expand their businesses. Worked on a diverse range of B2B and B2C SaaS projects where I have successfully increased user engagement, growth and quality, that's what I'm passionate about.",
         "about2": "From ground-breaking initiatives to game-changing projects, I have consistently elevated the standards of user experience, empowering businesses to reach new heights. Explore my digital journey, and let's connect to unlock innovation together.",
         "website": "https://ankitkumar.vercel.app",
-        "image": "image/profile.jpg",
+        "image": "image/profile.jpeg",
         "resumedownload": window.location.origin + '/Ankit-Kumar-Resume.pdf',
         "social": [
             {
