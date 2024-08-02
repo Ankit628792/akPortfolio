@@ -5,7 +5,6 @@ import { ThemeContext } from "../App";
 
 function About({ about }) {
     const { state } = useContext(ThemeContext);
-
     return (
         <div className="about flex">
             <div className="imgBx">

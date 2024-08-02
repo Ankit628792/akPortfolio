@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Button({text}) {
+function Button({ text }) {
     return (
         <button className="btn" type="button">
             <span>
-            {text}
+                {text}
             </span>
         </button>
     )

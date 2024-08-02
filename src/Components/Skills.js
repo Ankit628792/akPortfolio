@@ -8,7 +8,7 @@ function Skills({ skills }) {
             <p>{skills.desc}</p>
             <div className="skill">
                 {
-                    skills.images.map((image , i) => (
+                    skills.images.map((image, i) => (
                         <div key={i} className="img__container">
                             <img src={image} alt="" />
                         </div>
