@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MyValues from "@/components/MyValues";
 import Navbar from "@/components/Navbar";
-import Projects from "@/components/Projects";
+// import Projects from "@/components/Projects";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Navbar />
       <Header />
-      <Projects />
+      {/* <Projects /> */}
       <About />
       <Hero />
       <Experience />
