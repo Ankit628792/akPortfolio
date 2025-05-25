@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color--text-dark-1: #141416;
+  --color--text-grey: #56657f;
+  --color--border-dark: #454756;
+  --color--bg-dark-tag: #1c1d20;
+  --color--primary-500: #9d9bf6;
+  --color--bg-dark: #141416;
+  --color--white: white;
+  --color--text-dark-3: #97a4b6;
+  --color--text-dark-6: #97a4b6;
+  --color--text-dark-4: #c3c9d3;
+  --color--border-dark-2: #34363c;
+  --color--divider: #e1e7eb;
+  --color--border-light: #d8dae5;
+  --color--grey-50: #f7f8fb;
+  --color--primary-400: #b3b2fb;
+  --color--green-500: #3acd83;
+  --color--text-dark-5: #6b7280;
+  --color--bg-grey: #f6f7f9;
+  --color--red: #eb5757;
+  --white: white;
+  --black: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: radial-gradient(#1c1d20, #000);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+a {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4 !important;
+  user-select: none;
+}
+
+
+.poetsen-one {
+  font-family: "Poetsen One", sans-serif;
+}
+
+.exile {
+  font-family: "Exile", system-ui;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5 !important;
+  letter-spacing: 0.5px !important;
+  word-spacing: 1px !important;
+}
+
+
+.text-primary {
+  color: var(--color--primary-500);
+}
+
+.bg-primary {
+  background-color: var(--color--primary-500);
+}
+
+.text-primary2 {
+  color: var(--color--primary-400);
+}
+
+.bg-primary2 {
+  background-color: var(--color--primary-400);
+}
+
+.purple__text {
+  color: #b3b2fb;
+}
+
+.dark__bg {
+  background: rgba(28, 29, 36, 1);
+}
+
+.overlay-gradient-v2 {
+  background: linear-gradient(75deg, rgba(179, 178, 251, 0.5) 0%, rgba(179, 178, 251, 0.25) 50%, rgba(179, 178, 251, 0.5) 100%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.stroke-text-white {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.gradient-circle {
+  width: 200;
+  height: 200;
+  background: radial-gradient(circle, rgba(147, 136, 254, 1) 0%, rgba(28, 29, 36, 0) 66%);
+  position: absolute;
+  opacity: 0.4;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(5vw);
+}
