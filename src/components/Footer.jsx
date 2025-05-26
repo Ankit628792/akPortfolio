@@ -91,6 +91,7 @@ const Footer = () => {
     return (
         <section
             ref={footerRef}
+            id='contact'
             className="h-dvh overflow-hidden bg-[#141416] flex w-full flex-col justify-end p-5 -z-10"
         >
             <div className="w-full max-w-[80rem] mx-auto">

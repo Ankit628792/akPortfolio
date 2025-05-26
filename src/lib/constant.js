@@ -24,9 +24,9 @@ export const NAV_SOCIALS = [
 
 export const NAV_OPTIONS = [
     { name: 'Home', url: '/' },
-    { name: 'About', url: '/about' },
-    { name: 'Projects', url: '/projects' },
-    { name: 'Contact', url: '/contact' }
+    { name: 'About', url: '#about' },
+    { name: 'Projects', url: '#projects' },
+    { name: 'Contact', url: '#contact' }
 ]
 
 export const PROJECTS = [

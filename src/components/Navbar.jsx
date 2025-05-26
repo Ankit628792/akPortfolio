@@ -92,7 +92,7 @@ function Navbar() {
                     </div>
                     <div className="flex flex-col gap-4 text-4xl leading-normal px-5 text-right sm:text-left">
                         {NAV_OPTIONS.map((item, index) => (
-                            <a href={item.url} key={index}>
+                            <a onClick={() => handleNav()} href={item.url} key={index}>
                                 <MoveText group text={item.name} finalTextClass='text-primary-400' />
                             </a>
                         ))}

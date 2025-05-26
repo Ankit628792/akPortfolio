@@ -12,7 +12,7 @@ const finalPositionSm = Array(20).fill(0)
 
 function MyProjects({ length = PROJECTS.length }) {
     return (
-        <section className='min-h-screen bg-gray-950 px-10 pt-80 pb-40'>
+        <section id='projects' className='min-h-screen bg-gray-950 px-10 pt-80 pb-40'>
             <h1 className='text-5xl sm:text-6xl lg:text-7xl text-primary-400 opacity-10 exile text-center'>My Projects</h1>
             <div className='w-full max-w-8xl mx-auto flex justify-center flex-wrap gap-20 xl:gap-40 relative'>
                 {
