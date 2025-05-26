@@ -101,7 +101,7 @@ const Footer = () => {
                 >
                     <div className="text-5xl sm:text-6xl font-semibold flex flex-col gap-4">
                         <div className="flex items-center gap-2.5 sm:gap-5 group">
-                            <div className="text-white">Let's</div>
+                            <div className="text-white">Let&apos;s</div>
                             <a href={INTAGRAM_LINK} target="_blank" rel="noreferrer" className="h-16 sm:h-20 md:h-24 shrink-0 rounded-full overflow-hidden cursor-pointer">
                                 <img
                                     className="w-full h-full object-cover hover:rotate-360 origin-center duration-1000 ease-in-out"

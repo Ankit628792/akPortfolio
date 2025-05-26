@@ -61,7 +61,7 @@ export default function About() {
           {/* Right Side: Heading */}
           <div className="max-w-xl space-y-4 text-left md:text-right" ref={headingRef}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-loose">
-              Hi, I'm
+              Hi, I&apos;m
               <MoveText finalTextClass=" text-primary-400 poetsen-one " initalTextClass="text-primary-400 poetsen-one" text={"Ankit"} group></MoveText>
               <br />
               Build Digital Products that
