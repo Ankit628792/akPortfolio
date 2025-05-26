@@ -20,10 +20,9 @@ export default function Home() {
     <>
       <Navbar />
       <Header />
-      <MyProjects length={6} />
-      {/* <Projects /> */}
       <About />
       <Hero />
+      <MyProjects length={6} />
       <Experience />
       <MyValues />
       <Footer />

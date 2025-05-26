@@ -95,6 +95,12 @@ export default function Hero() {
           <MagneticEffect>
             <button
               ref={buttonRef}
+              onClick={() => {
+                window.scrollBy({
+                  top: window.innerHeight,
+                  behavior: "smooth",
+                })
+              }}
               className="mt-4 sm:mt-6 bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group"
             >
               <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"View Projects"}></MoveText>

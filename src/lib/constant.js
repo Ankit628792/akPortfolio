@@ -34,85 +34,37 @@ export const PROJECTS = [
         title: "Love Alarm 2.0",
         subTitle: "Notifies users about mutual love using location.",
         roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
+        image: "/projects/lovealarm.png",
     },
     {
         title: "ShareBook",
         subTitle: "Share books locally to connect and reduce waste.",
         roles: "UX, UI Design, Development",
-        image: "/projects/sharebook.png"
+        image: "/projects/sharebook.png",
     },
     {
         title: "Byrds",
         subTitle: "Helps users and businesses go carbon neutral.",
         roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
+        image: "/projects/byrds.png",
+
     },
     {
         title: "Aqqess",
         subTitle: "Manages secure QR-based employee access and tracking.",
         roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
+        image: "/projects/aqqess.png"
     },
     {
         title: "CornerQube",
         subTitle: "Simplifies B2B customer review collection and management.",
         roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
+        image: "/projects/corner_qube.png"
     },
     {
-        title: "Greyffiti",
-        subTitle: "Real-time design and document collaboration tool.",
+        title: "Rekindle",
+        subTitle: "Dating app for those seeking second chances.",
         roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-    {
-        title: "Neuron Club",
-        subTitle: "Predict global events and earn rewards online.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-    {
-        title: "Cryptopunk",
-        subTitle: "Manage crypto, NFTs, and track market trends.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-
-    {
-        title: "Delanki",
-        subTitle: "Offers full-stack product development services for teams.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-    {
-        title: "IPU Manager",
-        subTitle: "Manages student internet and email access easily.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-    {
-        title: "Raahi",
-        subTitle: "Advanced cab booking with transparent scheduling options.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-    {
-        title: "Benny Bland",
-        subTitle: "Shop or design personalized printed t-shirts.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-    {
-        title: "Amazon 2.0",
-        subTitle: "Clone of Amazon with cart and payment features.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
-    },
-    {
-        title: "Diet Planner",
-        subTitle: "Create, track, and manage personalized diet plans.",
-        roles: "UX, UI Design, Development",
-        image: "/placeholder.jpeg"
+        image: "/projects/rekindle.png",
     },
 ];
