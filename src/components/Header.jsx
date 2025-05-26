@@ -58,7 +58,7 @@ function Header() {
             duration: 1,
             ease: 'slow(0.9,0.7,false)',
         });
-    }, []); // <-- important to pass dependency array here
+    }, []);
 
     return (
         <section className="min-h-screen w-full -z-10 flex flex-col items-center justify-center select-none sticky top-0">

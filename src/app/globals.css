@@ -76,6 +76,9 @@ a {
   word-spacing: 1px !important;
 }
 
+.max-w-8xl {
+  max-width: 90rem !important;
+}
 
 .text-primary {
   color: var(--color--primary-500);
