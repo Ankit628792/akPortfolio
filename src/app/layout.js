@@ -4,6 +4,11 @@ import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
+
+export const viewport = {
+  themeColor: "#9d9bf6",
+}
+
 export const metadata = {
   title: "Ankit Kumar – Developer Portfolio",
   description:
@@ -52,7 +57,6 @@ export const metadata = {
   icons: {
     icon: "/favicon.png",
   },
-  themeColor: "#9d9bf6",
 };
 
 export default function RootLayout({ children }) {
