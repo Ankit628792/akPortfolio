@@ -97,6 +97,7 @@ function Header() {
                     muted
                     autoPlay
                     loop
+                    poster='/assets/hero.png'
                 >
                     <source src="/assets/hero.mp4" type="video/mp4" />
                 </video>
