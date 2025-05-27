@@ -73,7 +73,7 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="sm:min-h-screen flex items-center justify-center px-10 py-20 relative bg-black mt-96"
+      className="sm:min-h-screen flex items-center justify-center px-10 py-20 relative bg-black mt-96 w-full overflow-hidden"
     >
       <div className="relative w-full max-w-8xl sm:min-h-[90dvh] space-y-16 md:space-y-0">
         {/* Top Left Text */}
