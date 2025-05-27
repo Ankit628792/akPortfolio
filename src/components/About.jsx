@@ -60,25 +60,27 @@ export default function About() {
         <div className="max-w-8xl w-full flex flex-col md:flex-row-reverse md:items-center justify-between gap-10 py-20">
           {/* Right Side: Heading */}
           <div className="max-w-xl space-y-4 text-left md:text-right" ref={headingRef}>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-loose">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-loose group">
               Hi, I&apos;m
-              <MoveText finalTextClass=" text-primary-400 poetsen-one " initalTextClass="text-primary-400 poetsen-one" text={"Ankit"} group></MoveText>
+              <MoveText finalTextClass=" text-primary-400 poetsen-one " initalTextClass="text-primary-400 poetsen-one" text={"Ankit"} finalText={"안키트"}></MoveText>
               <br />
               Build Digital Products that
-              <MoveText finalTextClass=" text-primary-400 poetsen-one " initalTextClass="text-primary-400 poetsen-one" text={"Inspire"} group></MoveText>
+              <MoveText finalTextClass=" text-primary-400 poetsen-one " initalTextClass="text-primary-400 poetsen-one" text={"Inspire"} finalText={"Impact"}></MoveText>
               Livings
               <MagneticEffect>
-                <span className="inline-block ml-2 cursor-grab active:scale-50">🏀</span>
+                <span className="inline-block ml-2 cursor-grab">🏀</span>
               </MagneticEffect>
             </h1>
           </div>
 
           {/* Left Side: Paragraph and Button */}
           <div className="md:w-1/3 text-left">
-            <MoveText initalTextClass="text-primary-500 text-sm poppins" finalTextClass="text-primary-500 text-sm poppins" wrapperClass="mb-2.5 -ml-1" group text={"Hello There..."} />
-            <p className="text-gray-300 mb-6 md:text-left poppins" ref={paragraphRef}>
-              I love crafting digital experiences that not only look good but also feel natural and useful. My work connects innovation with real people’s needs.
-            </p>
+            <div className="w-full group">
+              <MoveText initalTextClass="text-primary-500 text-sm poppins" finalTextClass="text-primary-500 text-sm poppins" wrapperClass="mb-2.5 -ml-1 cursor-auto" group text={"Hello There !!!"} finalText={"안녕하세요 사람인"} />
+              <p className="text-gray-300 mb-6 md:text-left poppins" ref={paragraphRef}>
+                I love crafting digital experiences that not only look good but also feel natural and useful. My work connects innovation with real people’s needs.
+              </p>
+            </div>
             <MagneticEffect>
               <button
                 ref={buttonRef}

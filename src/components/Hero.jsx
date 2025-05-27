@@ -82,11 +82,11 @@ export default function Hero() {
         >
           <h1
             ref={headingRef}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-loose text-white capitalize"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-loose text-white capitalize group max-w-max"
           >
             Creating <br />
             Digital Products <br />
-            That <MoveText finalTextClass=" text-primary-400 poetsen-one " initalTextClass="text-primary-400 poetsen-one" text={"Inspire"} group></MoveText>
+            That <MoveText finalTextClass=" text-primary-400 poetsen-one " initalTextClass="text-primary-400 poetsen-one" text={"Inspire"} finalText={"Impact"}></MoveText>
 
           </h1>
           <p ref={subTextRef} className="mt-3 text-base sm:text-lg text-gray-300 poppins">
@@ -113,7 +113,7 @@ export default function Hero() {
           ref={topRightRef}
           className="md:absolute z-10 top-0 right-0 sm:max-w-sm md:text-right group"
         >
-          <MoveText wrapperClass="pr-8" finalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" initalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" text={"15+ Products Launched"}></MoveText>
+          <MoveText wrapperClass="pr-8 cursor-auto" finalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" initalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" text={"15+ Products Launched"} finalText={"each with its own tale"} />
           <p className="text-base mt-2 text-gray-300 poppins">
             From early-stage startups to growing businesses, bring powerful ideas to life across various industries.
           </p>
@@ -145,7 +145,7 @@ export default function Hero() {
             </a>
           </div>
           <p className="text-base text-gray-300 poppins mt-3">
-            I’m a full-stack developer with a passion for crafting innovative digital products using React and Node — solutions that stand out and make an impact.
+            I’m a software engineer who breathes life into digital dreams using React and Node — products that don’t just work, but become masterpiece.
           </p>
         </div>
 
@@ -154,9 +154,7 @@ export default function Hero() {
           ref={bottomRightRef}
           className="md:absolute z-10 bottom-0 right-0 sm:max-w-sm md:text-right group"
         >
-          <div className="font-bold text-xl poetsen-one">3+ Years Of Experience</div>
-          <MoveText wrapperClass="pr-8" finalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" initalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" text={"3+ Years Of Experience"}></MoveText>
-
+          <MoveText wrapperClass="pr-8 cursor-auto" finalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" initalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max !leading-none" text={"3+ Years Of Experience"} finalText={"writes stories via code"} />
           <p className="text-base mt-2 text-gray-300 poppins">
             Building thoughtful products that balance innovation with real user needs — from backend logic to beautiful interfaces.
           </p>
