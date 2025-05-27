@@ -61,7 +61,7 @@ function Header() {
     }, []);
 
     return (
-        <section className="min-h-screen w-full -z-10 flex flex-col items-center justify-center select-none sticky top-0">
+        <section className="min-h-screen w-full z-0 flex flex-col items-center justify-center select-none sticky top-0 left-0 right-0">
             <div className="loader absolute bottom-20">
                 <div className="phase1">
                     <div className="relative flex items-center justify-center text-5xl font-medium text-white tracking-wider text-container">

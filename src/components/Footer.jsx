@@ -92,7 +92,7 @@ const Footer = () => {
         <section
             ref={footerRef}
             id='contact'
-            className="h-dvh overflow-hidden bg-[#141416] flex w-full flex-col justify-end p-5 -z-10"
+            className="h-dvh overflow-hidden bg-[#141416] flex w-full flex-col justify-end p-5 z-10 relative"
         >
             <div className="w-full max-w-[80rem] mx-auto">
                 {/* Header Text Block */}
@@ -147,21 +147,26 @@ const Footer = () => {
                 {/* Call to Action */}
                 <div className="h-40 sm:h-52 flex flex-col justify-center">
                     <div className="relative h-32 sm:h-40 md:h-52 flex flex-col justify-center w-full">
-                        <div className="w-full h-[0.5px] bg-white"></div>
+                        <div className="w-full h-[0.5px] bg-white relative">
+                            {/* <h1 className='text-white text-xs'>or Find me on Google by "Ankit628792"</h1> */}
+                        </div>
                         <div
                             ref={ctaRef}
                             className="absolute w-32 sm:w-40 h-32 sm:h-40 md:h-52 md:w-52 left-auto right-0 md:right-10 lg:right-20 top-0 bottom-0 flex flex-col items-center justify-center"
                         >
                             <MagneticEffect>
-                                <a href={"mailto:" + EmailID} className="w-full h-full bg-primary-400 text-white md:text-lg flex items-center justify-center gap-2 rounded-full overflow-hidden cursor-pointer relative z-10 group">
+                                <div onClick={() => {
+                                    const searchUrl = `https://www.google.com/search?q=Ankit628792`;
+                                    window.open(searchUrl, '_blank');
+                                }} className="w-full h-full bg-primary-400 text-white md:text-lg flex items-center justify-center gap-2 rounded-full overflow-hidden cursor-pointer relative z-10 group">
                                     <div className='flex items-center justify-center gap-1 sm:gap-2 relative z-10'>
-                                        <h1 className='text-sm sm:text-base'>Get in touch</h1>
+                                        <h1 className='text-sm sm:text-base'>Google Me</h1>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>
                                     </div>
                                     <div className='absolute rounded-full inset-0 bg-primary-500 transform scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out origin-bottom'></div>
-                                </a>
+                                </div>
                             </MagneticEffect>
                             <img className="absolute inset-0 transform scale-[3] sm:scale-[4] z-0 animate-pulse" src="/assets/radial.svg" alt="" />
                         </div>
@@ -174,7 +179,7 @@ const Footer = () => {
                         <a href={INTAGRAM_LINK} target="_blank" rel="noreferrer">
                             <MoveText text={'Ankit Kumar'} finalTextClass="text-primary-400" />
                         </a>
-                        <span className='shrink-0'>&nbsp;&copy; 2024</span>
+                        <span className='shrink-0'>&nbsp;&copy; 2025</span>
                         <Heart className='w-8 text-primary-400 group-hover:fill-primary-400 animate-pulse' />
                     </h1>
                 </div>

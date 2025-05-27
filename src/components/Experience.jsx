@@ -64,7 +64,7 @@ export default function Experience() {
     return (
         <section
             ref={containerRef}
-            className="bg-[#f5f5f5] py-40 px-6 sm:px-10"
+            className="bg-[#f5f5f5] py-24 sm:py-32 md:py-40 px-6 sm:px-10 relative"
         >
             <div className="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-2">
                 {/* Call to Action Block */}

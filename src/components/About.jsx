@@ -55,7 +55,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="bg-black text-white min-h-screen flex items-center justify-center px-10 py-20 relative">
+    <section id="about" ref={sectionRef} className="bg-black text-white min-h-screen flex items-center justify-center px-10 pb-20 pt-0 sm:py-20 relative">
       <div className="max-w-8xl w-full text-center space-y-6">
         <div className="max-w-8xl w-full flex flex-col md:flex-row-reverse md:items-center justify-between gap-10 py-20">
           {/* Right Side: Heading */}
