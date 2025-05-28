@@ -1,6 +1,7 @@
 'use client'
 
 import About from "@/components/About";
+import CustomCursor from "@/components/CustomCursor";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -18,6 +19,7 @@ export default function Home() {
   }, [])
   return (
     <>
+      <CustomCursor />
       <Navbar delay={6} />
       <Header />
       <About />

@@ -7,6 +7,7 @@ import { useClickOutside } from '@/lib';
 import { NAV_OPTIONS, NAV_SOCIALS } from '@/lib/constant';
 import MoveText from './effects/MoveText';
 import { Heart } from 'lucide-react';
+import CustomCursor from './CustomCursor';
 
 function Navbar({ delay = 1 }) {
     const navRef = useRef();
@@ -87,51 +88,54 @@ function Navbar({ delay = 1 }) {
     });
 
     return (
-        <nav ref={navRef} className='fixed w-full top-0 z-40 py-4 px-5 md:px-10 xl:px-20 flex items-center justify-between opacity-0'>
-            <div className="full__screen__nav fixed top-0 -right-full bottom-0 w-full max-w-xl dark__bg text-white flex flex-col items-start justify-between p-10 sm:px-20 z-50">
-                <div className="flex flex-col w-full gap-5 mt-14 sm:mt-4 flex-grow">
-                    <div className="mb-6 menuTitle">
-                        <h4 className="text-lg py-2 font-light text-right sm:text-left">Menu</h4>
-                        <div className="h-0.5 border-b-[1px] border-gray-500 w-0 bar"></div>
+        <>
+            <CustomCursor />
+            <nav ref={navRef} className='fixed w-full top-0 z-40 py-4 px-5 md:px-10 xl:px-20 flex items-center justify-between opacity-0'>
+                <div className="full__screen__nav fixed top-0 -right-full bottom-0 w-full max-w-xl dark__bg text-white flex flex-col items-start justify-between p-10 sm:px-20 z-50">
+                    <div className="flex flex-col w-full gap-5 mt-14 sm:mt-4 flex-grow">
+                        <div className="mb-6 menuTitle">
+                            <h4 className="text-lg py-2 font-light text-right sm:text-left">Menu</h4>
+                            <div className="h-0.5 border-b-[1px] border-gray-500 w-0 bar"></div>
+                        </div>
+                        <div className="flex flex-col gap-4 text-4xl leading-normal px-5 text-right sm:text-left">
+                            {NAV_OPTIONS.map((item, index) => (
+                                <a onClick={() => handleNav()} href={item.url} key={index}>
+                                    <MoveText group text={item.name} finalTextClass='text-primary-400' />
+                                </a>
+                            ))}
+                        </div>
                     </div>
-                    <div className="flex flex-col gap-4 text-4xl leading-normal px-5 text-right sm:text-left">
-                        {NAV_OPTIONS.map((item, index) => (
-                            <a onClick={() => handleNav()} href={item.url} key={index}>
+                    <div className='flex items-center justify-center w-full gap-6 md:gap-10 text-lg sm:text-xl leading-normal px-5'>
+                        {NAV_SOCIALS.map((item, index) => (
+                            <a href={item.url} target="_blank" rel="noreferrer" key={index}>
                                 <MoveText group text={item.name} finalTextClass='text-primary-400' />
                             </a>
                         ))}
                     </div>
+                    <h1 className="text-white text-base flex items-center justify-center w-full mt-4 group border-t pt-4 border-gray-600">
+                        <span>Made with</span>
+                        <Heart className='w-8 text-primary-400 group-hover:fill-primary-400 animate-pulse' />
+                        <span className='shrink-0'>&nbsp;&copy; 2025</span>
+                    </h1>
                 </div>
-                <div className='flex items-center justify-center w-full gap-6 md:gap-10 text-lg sm:text-xl leading-normal px-5'>
-                    {NAV_SOCIALS.map((item, index) => (
-                        <a href={item.url} target="_blank" rel="noreferrer" key={index}>
-                            <MoveText group text={item.name} finalTextClass='text-primary-400' />
-                        </a>
-                    ))}
-                </div>
-                <h1 className="text-white text-base flex items-center justify-center w-full mt-4 group border-t pt-4 border-gray-600">
-                    <span>Made with</span>
-                    <Heart className='w-8 text-primary-400 group-hover:fill-primary-400 animate-pulse' />
-                    <span className='shrink-0'>&nbsp;&copy; 2025</span>
-                </h1>
-            </div>
 
-            <div onClick={() => window.location.pathname === "/" ? window.scrollTo({ top: 0, behavior: 'smooth' }) : window.location.pathname = "/"} className="logo cursor-pointer bg-blend-difference mix-blend-difference text-black z-50">
-                <MagneticEffect>
-                    <img src="/ank.svg" className='w-12 sm:w-14' alt="Logo" />
-                </MagneticEffect>
-            </div>
-            <MagneticEffect>
-                <div className={'flex flex-col items-center justify-center gap-1.5 bg-white bg-opacity-20 rounded-full p-1 w-16 h-16 cursor-pointer z-50 group relative ' + (active ? "" : "hover:bg-opacity-30")} onClick={handleNav}>
-                    {active && <div className='absolute rounded-full inset-0 bg-primary-500 transform scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out origin-bottom'></div>}
-                    <div className='flex flex-col items-center justify-center gap-1.5 menu relative'>
-                        <div className='w-10 h-1 rounded-full bg-white line1'></div>
-                        <div className='w-7 h-1 mr-auto rounded-full bg-white line2'></div>
-                        <div className='w-4 h-1 mr-auto rounded-full bg-white line3'></div>
-                    </div>
+                <div onClick={() => window.location.pathname === "/" ? window.scrollTo({ top: 0, behavior: 'smooth' }) : window.location.pathname = "/"} className="logo cursor-pointer bg-blend-difference mix-blend-difference text-black z-50">
+                    <MagneticEffect>
+                        <img src="/ank.svg" className='w-12 sm:w-14' alt="Logo" />
+                    </MagneticEffect>
                 </div>
-            </MagneticEffect>
-        </nav>
+                <MagneticEffect>
+                    <div className={'flex flex-col items-center justify-center gap-1.5 bg-white bg-opacity-20 rounded-full p-1 w-16 h-16 cursor-pointer z-50 group relative ' + (active ? "" : "hover:bg-opacity-30")} onClick={handleNav}>
+                        {active && <div className='absolute rounded-full inset-0 bg-primary-500 transform scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out origin-bottom'></div>}
+                        <div className='flex flex-col items-center justify-center gap-1.5 menu relative'>
+                            <div className='w-10 h-1 rounded-full bg-white line1'></div>
+                            <div className='w-7 h-1 mr-auto rounded-full bg-white line2'></div>
+                            <div className='w-4 h-1 mr-auto rounded-full bg-white line3'></div>
+                        </div>
+                    </div>
+                </MagneticEffect>
+            </nav>
+        </>
     );
 }
 
