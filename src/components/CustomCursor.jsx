@@ -80,7 +80,7 @@ const CustomCursor = () => {
             />
             <div
                 ref={cursorRef}
-                className="pointer-events-none fixed -top-8 -left-8 z-[9999] w-4 h-4 rounded-full bg-primary-400 transition-opacity duration-200 hidden lg:inline-block"
+                className="pointer-events-none fixed top-0 left-0 z-[9999] w-4 h-4 rounded-full bg-primary-400 transition-opacity duration-200 hidden lg:inline-block"
             />
         </>
     );

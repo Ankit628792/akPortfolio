@@ -90,7 +90,7 @@ function Navbar({ delay = 1 }) {
     return (
         <>
             <CustomCursor />
-            <nav ref={navRef} className='fixed w-full top-0 z-40 py-4 px-5 md:px-10 xl:px-20 flex items-center justify-between opacity-0'>
+            <nav ref={navRef} className='fixed w-full top-0 z-40 py-4 px-5 md:px-10 xl:px-20 flex items-center justify-between opacity-0 '>
                 <div className="full__screen__nav fixed top-0 -right-full bottom-0 w-full max-w-xl dark__bg text-white flex flex-col items-start justify-between p-10 sm:px-20 z-50">
                     <div className="flex flex-col w-full gap-5 mt-14 sm:mt-4 flex-grow">
                         <div className="mb-6 menuTitle">
@@ -99,7 +99,7 @@ function Navbar({ delay = 1 }) {
                         </div>
                         <div className="flex flex-col gap-4 text-4xl leading-normal px-5 text-right sm:text-left">
                             {NAV_OPTIONS.map((item, index) => (
-                                <a onClick={() => handleNav()} href={item.url} key={index}>
+                                <a onClick={() => handleNav()} href={item.url} key={index} className='inline-block max-w-max'>
                                     <MoveText group text={item.name} finalTextClass='text-primary-400' />
                                 </a>
                             ))}
