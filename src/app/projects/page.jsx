@@ -67,7 +67,7 @@ function Projects() {
             <Navbar />
             <section ref={sectionRef} className='flex flex-col items-center justify-end md:justify-center w-full min-h-[80dvh] md:min-h-screen bg-gray-950 p-5'>
                 <h1 ref={titleRef} className='text-6xl sm:text-7xl lg:text-[11vw] font-bold ankit text-center exile text-gray-100 !leading-[1]'>Recent projects</h1>
-                <p ref={paraRef} className='text-lg sm:text-xl lg:text-2xl max-w-xl md:max-w-2xl lg:max-w-3xl text-center mx-auto mt-4 text-gray-500'>Check out some of the recent projects I've had the pleasure of working on.</p>
+                <p ref={paraRef} className='text-lg sm:text-xl lg:text-2xl max-w-xl md:max-w-2xl lg:max-w-3xl text-center mx-auto mt-4 text-gray-500'>Check out some of the recent projects I&apos;ve had the pleasure of working on.</p>
                 <MagneticEffect>
                     <div ref={iconRef} className="col-span-2 flex flex-col items-center mt-16 cursor-grab">
                         <div className="text-sm poppins text-gray-500">Scroll Down</div>
