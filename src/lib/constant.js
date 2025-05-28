@@ -70,6 +70,34 @@ export const PROJECTS = [
 ];
 
 
+export const EXPERIENCES = [
+    {
+        company: "The Neuron Club",
+        role: "Full Stack Web Developer",
+        period: "Sep 2021 - Feb 2022",
+        primaryTech: "Next.js & Web3",
+        logo: "/assets/the_neuron_club.jpeg",
+        website: "https://www.linkedin.com/company/the-neuron-club/"
+    },
+    {
+        company: "Sugoi Labs",
+        role: "Product Development Engineer",
+        period: "April 2022 - Mar 2024",
+        primaryTech: "React & Node",
+        logo: "/assets/sugoi_labs.jpeg",
+        website: "https://www.linkedin.com/company/sugoi-labs/"
+    },
+    {
+        company: "Appinventiv",
+        role: "Senior Software Engineer",
+        primaryTech: "React Native",
+        period: "Oct 2024 - Current",
+        logo: "/assets/appinventiv.jpeg",
+        website: "https://www.linkedin.com/company/appinventiv"
+    },
+];
+
+
 
 export const about = `
 Hi, I’m Ankit — a self-taught software developer and a mountain soul.

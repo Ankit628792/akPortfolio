@@ -58,7 +58,7 @@ export default function About() {
     <section id="about" ref={sectionRef} className="bg-black text-white min-h-screen flex items-center justify-center px-10 pb-20 pt-0 sm:py-20 relative">
       <div className="max-w-8xl w-full text-center space-y-6">
         <div className="max-w-8xl w-full flex flex-col md:flex-row-reverse md:items-center justify-between gap-10 py-20">
-          {/* Right Side: Heading */}
+
           <div className="max-w-xl space-y-4 text-left md:text-right" ref={headingRef}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-loose group">
               Hi, I&apos;m
@@ -73,7 +73,6 @@ export default function About() {
             </h1>
           </div>
 
-          {/* Left Side: Paragraph and Button */}
           <div className="md:w-1/3 text-left">
             <div className="w-full group">
               <MoveText initalTextClass="text-primary-500 text-sm poppins" finalTextClass="text-primary-500 text-sm poppins" wrapperClass="mb-2.5 -ml-1 cursor-auto" group text={"Hello There !!!"} finalText={"안녕하세요 사람인"} />
@@ -98,7 +97,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Scroll Down Indicator */}
         <MagneticEffect>
           <div ref={scrollRef} className="col-span-2 flex flex-col items-center mt-16 cursor-grab">
             <div className="text-gray-400 text-sm poppins">Scroll Down</div>

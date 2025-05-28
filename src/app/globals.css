@@ -4,23 +4,22 @@
 
 
 :root {
-  --color--text-dark-1: #141416;
   --color--text-grey: #56657f;
   --color--border-dark: #454756;
   --color--bg-dark-tag: #1c1d20;
-  --color--primary-500: #9d9bf6;
   --color--bg-dark: #141416;
+  --color--primary-500: #9d9bf6;
+  --color--primary-400: #b3b2fb;
   --color--white: white;
   --color--text-dark-3: #97a4b6;
-  --color--text-dark-6: #97a4b6;
   --color--text-dark-4: #c3c9d3;
+  --color--text-dark-5: #6b7280;
+  --color--text-dark-6: #97a4b6;
   --color--border-dark-2: #34363c;
   --color--divider: #e1e7eb;
   --color--border-light: #d8dae5;
   --color--grey-50: #f7f8fb;
-  --color--primary-400: #b3b2fb;
   --color--green-500: #3acd83;
-  --color--text-dark-5: #6b7280;
   --color--bg-grey: #f6f7f9;
   --color--red: #eb5757;
   --white: white;

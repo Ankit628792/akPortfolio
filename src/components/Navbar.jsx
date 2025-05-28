@@ -51,7 +51,7 @@ function Navbar({ delay = 1 }) {
                     position: 'absolute',
                 }, 'menu');
 
-            // Open full-screen nav
+            // Open full-height-screen nav
             navTl.to(".full__screen__nav", { right: 0 })
                 .fromTo(".full__screen__nav .menuTitle", { opacity: 0 }, { opacity: 1 })
                 .to(".full__screen__nav .bar", { width: '100%' })
@@ -112,7 +112,7 @@ function Navbar({ delay = 1 }) {
                 <h1 className="text-white text-base flex items-center justify-center w-full mt-4 group border-t pt-4 border-gray-600">
                     <span>Made with</span>
                     <Heart className='w-8 text-primary-400 group-hover:fill-primary-400 animate-pulse' />
-                    <span className='shrink-0'>&nbsp;&copy; 2024</span>
+                    <span className='shrink-0'>&nbsp;&copy; 2025</span>
                 </h1>
             </div>
 

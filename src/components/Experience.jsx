@@ -5,35 +5,10 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MagneticEffect from "./effects/MagneticEffect";
 import MoveText from "./effects/MoveText";
+import { EXPERIENCES } from "@/lib/constant";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const experiences = [
-    {
-        company: "The Neuron Club",
-        role: "Full Stack Web Developer",
-        period: "Sep 2021 - Feb 2022",
-        primaryTech: "Next.js & Web3",
-        logo: "/assets/the_neuron_club.jpeg",
-        website: "https://www.linkedin.com/company/the-neuron-club/"
-    },
-    {
-        company: "Sugoi Labs",
-        role: "Product Development Engineer",
-        period: "April 2022 - Mar 2024",
-        primaryTech: "React & Node",
-        logo: "/assets/sugoi_labs.jpeg",
-        website: "https://www.linkedin.com/company/sugoi-labs/"
-    },
-    {
-        company: "Appinventiv",
-        role: "Senior Software Engineer",
-        primaryTech: "React Native",
-        period: "Oct 2024 - Current",
-        logo: "/assets/appinventiv.jpeg",
-        website: "https://www.linkedin.com/company/appinventiv"
-    },
-];
 
 export default function Experience() {
     const containerRef = useRef(null);
@@ -41,7 +16,7 @@ export default function Experience() {
     useEffect(() => {
         const cards = gsap.utils.toArray(".parallax-card");
 
-        cards.forEach((card, index) => {
+        cards.forEach((card) => {
             gsap.fromTo(
                 card,
                 { y: 60, opacity: 0 },
@@ -54,7 +29,7 @@ export default function Experience() {
                         trigger: card,
                         start: "top 80%",
                         end: "bottom top",
-                        scrub: true, // enables parallax-like scroll interaction
+                        scrub: true,
                     },
                 }
             );
@@ -67,7 +42,6 @@ export default function Experience() {
             className="bg-snow-white py-24 sm:py-32 md:py-40 px-6 sm:px-10 relative"
         >
             <div className="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-2">
-                {/* Call to Action Block */}
                 <MagneticEffect>
                     <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between parallax-card cursor-grab">
                         <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
@@ -89,8 +63,7 @@ export default function Experience() {
                 </MagneticEffect>
 
 
-                {/* Experience Cards */}
-                {experiences.map((item, index) => (
+                {EXPERIENCES.map((item, index) => (
                     <MagneticEffect key={index}>
                         <div
                             className="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between parallax-card cursor-grab"

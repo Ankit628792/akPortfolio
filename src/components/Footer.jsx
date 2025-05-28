@@ -17,7 +17,6 @@ const Footer = () => {
     const socialRef = useRef(null);
     const ctaRef = useRef(null);
 
-    // 💡 GSAP Scroll Animations
     useEffect(() => {
         if (!footerRef.current) return;
 
@@ -95,7 +94,7 @@ const Footer = () => {
             className="h-dvh overflow-hidden bg-footer flex w-full flex-col justify-end p-5 z-10 relative"
         >
             <div className="w-full max-w-[80rem] mx-auto">
-                {/* Header Text Block */}
+
                 <div
                     ref={textBlockRef}
                     className="flex flex-col md:flex-row items-start justify-between gap-10 sm:gap-6"
@@ -147,9 +146,7 @@ const Footer = () => {
                 {/* Call to Action */}
                 <div className="h-40 sm:h-52 flex flex-col justify-center">
                     <div className="relative h-32 sm:h-40 md:h-52 flex flex-col justify-center w-full">
-                        <div className="w-full h-[0.5px] bg-white relative">
-                            {/* <h1 className='text-white text-xs'>or Find me on Google by "Ankit628792"</h1> */}
-                        </div>
+                        <div className="w-full h-[0.5px] bg-white relative" />
                         <div
                             ref={ctaRef}
                             className="absolute w-32 sm:w-40 h-32 sm:h-40 md:h-52 md:w-52 left-auto right-0 md:right-10 lg:right-20 top-0 bottom-0 flex flex-col items-center justify-center"
