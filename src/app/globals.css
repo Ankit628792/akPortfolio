@@ -25,6 +25,7 @@
   --color--red: #eb5757;
   --white: white;
   --black: black;
+  --snow-white: #f5f5f5
 }
 
 html {
@@ -95,6 +96,18 @@ a {
 
 .bg-primary2 {
   background-color: var(--color--primary-400);
+}
+
+.bg-snow-white {
+  background-color: var(--snow-white);
+}
+
+.bg-footer {
+  background: var(--color--bg-dark);
+}
+
+.text-snow-white {
+  color: var(--snow-white);
 }
 
 .purple__text {

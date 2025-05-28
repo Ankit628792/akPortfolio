@@ -17,6 +17,12 @@ function Contact() {
     const iconRef = useRef(null);
 
     useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.scrollTo(0, 0);
+        }
+    }, [])
+
+    useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.from(titleRef.current, {
                 opacity: 0,
@@ -48,7 +54,7 @@ function Contact() {
     return (
         <>
             <Navbar />
-            <section ref={sectionRef} className='flex flex-col items-center justify-end md:justify-center w-full min-h-[80dvh] md:min-h-screen bg-gray-950 p-5'>
+            <section ref={sectionRef} className='flex flex-col items-center justify-end md:justify-center w-full min-h-[80dvh] md:min-h-screen bg-gradient-to-b from-gray-950 to-[#141416] p-5'>
                 <h1 ref={titleRef} className='text-6xl sm:text-7xl lg:text-[11vw] max-w-7xl font-bold ankit text-center exile text-gray-100 !leading-[1]'>Drop Email</h1>
                 <div onClick={() => {
                     navigator.clipboard.writeText(EmailID);

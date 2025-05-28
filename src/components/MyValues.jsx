@@ -3,10 +3,9 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { VALUES } from '@/lib/constant';
 
 gsap.registerPlugin(ScrollTrigger);
-
-const textContent = `My diverse background is my superpower.\nIt lets me think differently, adapt quickly, and find creative solutions where others see limits.\nI see every challenge as a chance to grow and every idea as a spark for something better.`;
 
 export default function MyValues() {
     const containerRef = useRef(null);
@@ -100,7 +99,7 @@ export default function MyValues() {
                     ref={containerRef}
                     className="text-2xl sm:text-3xl md:text-4xl space-y-4 text-gray-300 poppins"
                 >
-                    {splitTextToLines(textContent)}
+                    {splitTextToLines(VALUES)}
                 </div>
             </div>
         </section>

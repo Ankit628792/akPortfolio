@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MoveText from "./effects/MoveText";
 import { Codepen, Github, Instagram, Linkedin } from "lucide-react";
 import { CODEPEN_LINK, GITHUB_LINK, INTAGRAM_LINK, LINKEDIN_LINK } from "@/lib/constant";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,20 +93,17 @@ export default function Hero() {
           <p ref={subTextRef} className="mt-3 text-base sm:text-lg text-gray-300 poppins">
             Craft engaging digital experiences that feel intuitive, meaningful, and built to last.
           </p>
-          <MagneticEffect>
-            <button
-              ref={buttonRef}
-              onClick={() => {
-                window.scrollBy({
-                  top: window.innerHeight,
-                  behavior: "smooth",
-                })
-              }}
-              className="mt-4 sm:mt-6 bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group"
-            >
-              <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"View Projects"}></MoveText>
-            </button>
-          </MagneticEffect>
+          <Link href="/projects">
+            <MagneticEffect>
+              <button
+                ref={buttonRef}
+
+                className="mt-4 sm:mt-6 bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group"
+              >
+                <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"View All Projects"}></MoveText>
+              </button>
+            </MagneticEffect>
+          </Link>
         </div>
 
         {/* Top Right Text */}

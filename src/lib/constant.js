@@ -24,9 +24,9 @@ export const NAV_SOCIALS = [
 
 export const NAV_OPTIONS = [
     { name: 'Home', url: '/' },
-    { name: 'About', url: '#about' },
-    { name: 'Projects', url: '#projects' },
-    { name: 'Contact', url: '#contact' }
+    { name: 'About', url: '/about' },
+    { name: 'Projects', url: '/projects' },
+    { name: 'Contact', url: '/contact' }
 ]
 
 export const PROJECTS = [
@@ -68,3 +68,21 @@ export const PROJECTS = [
         image: "/projects/rekindle.png",
     },
 ];
+
+
+
+export const about = `
+Hi, I’m Ankit — a self-taught software developer and a mountain soul.
+\nI write code with purpose — mostly using React and Node.js. But for me, it’s not just about picking the “better” technology. It’s about showing up fully, doing my best every day, and growing with every challenge.
+\nI never took formal programming classes. Instead, I learned on my own from reading docs, blogs, and spending late nights watching YouTube tutorials. This unconventional path shaped how I think, solve problems, and push myself beyond limits.
+\nI live a balanced life, both in mind and body. When life gets noisy or I feel low on energy, I pack my backpack and head to the mountains. Hiking and trekking through quiet trails recharges me like nothing else.
+\nOutside of work, I enjoy trying different hobbies to make the most of my free time. It keeps me refreshed and often sparks new ideas. I’ve also trained in psychology to better understand myself and others — especially to explore the question: “Why do people do the things they do?” I believe understanding this is the first step to creating meaningful work, because real impact starts with empathy.
+`
+
+export const VISION = `
+I believe understanding people is what makes technology really work. I want to build digital stuff that actually connects with what people need — not just something that works, but something that feels right.
+\nWhen you get why people do what they do, you can create things that really help. My goal is to use tech to make life easier and more fun for everyone.
+\nI’m always learning and trying to get better so what I build today beats yesterday. At the end of the day, it’s about making a positive difference — one line of code, one idea, and one connection at a time.
+`;
+
+export const VALUES = `My diverse background is my superpower.\nIt lets me think differently, adapt quickly, and find creative solutions where others see limits.\nI see every challenge as a chance to grow and every idea as a spark for something better.`;

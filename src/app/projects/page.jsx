@@ -16,6 +16,12 @@ function Projects() {
     const iconRef = useRef(null);
 
     useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.scrollTo(0, 0);
+        }
+    }, [])
+
+    useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.from(titleRef.current, {
                 opacity: 0,
@@ -82,7 +88,7 @@ function Projects() {
                 </MagneticEffect>
             </section>
             <section className='flex flex-col min-h-dvh w-full'>
-                <MyProjects />
+                <MyProjects className={"bg-gradient-to-b from-gray-950 to-[#141416]"} />
             </section>
             <Footer />
         </>
