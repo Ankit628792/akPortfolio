@@ -18,7 +18,7 @@ export default function Home() {
   }, [])
   return (
     <>
-      <Navbar />
+      <Navbar delay={6} />
       <Header />
       <About />
       <Hero />

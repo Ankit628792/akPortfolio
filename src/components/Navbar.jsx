@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -7,7 +8,7 @@ import { NAV_OPTIONS, NAV_SOCIALS } from '@/lib/constant';
 import MoveText from './effects/MoveText';
 import { Heart } from 'lucide-react';
 
-function Navbar() {
+function Navbar({ delay = 1 }) {
     const navRef = useRef();
     const menuTL = useRef(null);      // Timeline for menu icon animation
     const screenNavTL = useRef(null); // Timeline for screen nav
@@ -17,7 +18,7 @@ function Navbar() {
 
     const { contextSafe } = useGSAP(() => {
         const tl = gsap.timeline();
-        tl.fromTo(navRef.current, { opacity: 0 }, { opacity: 1, duration: 1, delay: 6 });
+        tl.fromTo(navRef.current, { opacity: 0 }, { opacity: 1, duration: 1, delay: delay });
     }, { scope: navRef });
 
     const handleNav = contextSafe(() => {
@@ -115,7 +116,7 @@ function Navbar() {
                 </h1>
             </div>
 
-            <div onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="logo cursor-pointer bg-blend-difference mix-blend-difference text-black z-50">
+            <div onClick={() => window.location.pathname === "/" ? window.scrollTo({ top: 0, behavior: 'smooth' }) : window.location.pathname = "/"} className="logo cursor-pointer bg-blend-difference mix-blend-difference text-black z-50">
                 <MagneticEffect>
                     <img src="/ank.svg" className='w-12 sm:w-14' alt="Logo" />
                 </MagneticEffect>
