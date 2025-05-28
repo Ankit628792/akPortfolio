@@ -156,12 +156,13 @@ const Footer = () => {
                         >
                             <MagneticEffect>
                                 <div onClick={() => {
-                                    const searchUrl = `https://www.google.com/search?q=Ankit628792`;
+                                    const searchUrl = `https://www.google.com/search?q=Ankit_628792`;
                                     window.open(searchUrl, '_blank');
                                 }} className="w-full h-full bg-primary-400 text-white md:text-lg flex items-center justify-center gap-2 rounded-full overflow-hidden cursor-pointer relative z-10 group">
                                     <div className='flex items-center justify-center gap-1 sm:gap-2 relative z-10'>
-                                        <h1 className='text-sm sm:text-base'>Google Me</h1>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                                        <h1 className='text-sm sm:text-base lg:text-lg text-right hidden sm:inline-block'>Find me on<br />Google</h1>
+                                        <h1 className='text-sm sm:text-base lg:text-lg text-right sm:hidden'>Google me</h1>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 lg:w-7 lg:h-7">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>
                                     </div>
