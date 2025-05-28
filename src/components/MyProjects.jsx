@@ -1,8 +1,9 @@
+"use client"
 import { PROJECTS } from '@/lib/constant'
 import useWindowResize from '@/lib/useWindowResize';
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import React, { useRef } from 'react'
+import React, { useMemo, useRef } from 'react'
 import MoveText from './effects/MoveText';
 
 const initialPosition = Array(20).fill(1).map((_, i) => 100 * ((i % 2) + 1))
@@ -14,8 +15,8 @@ const finalPositionSm = Array(20).fill(0)
 function MyProjects({ length = PROJECTS.length }) {
     return (
         <section id='projects' className='min-h-screen bg-gray-950 px-10 pt-40 md:pt-80 pb-40 relative'>
-            <h1 className='text-5xl sm:text-6xl lg:text-7xl text-primary-400 opacity-10 exile text-center'>My Projects</h1>
-            <div className='w-full max-w-8xl mx-auto flex justify-center flex-wrap gap-20 xl:gap-40 relative'>
+            <h1 className='text-5xl sm:text-6xl lg:text-7xl text-primary-400 opacity-10 exile text-center'>Projects</h1>
+            <div className='w-full max-w-8xl mx-auto flex justify-center flex-wrap gap-20 lg:gap-40 relative'>
                 {
                     PROJECTS.slice(0, length).map((project, index) => {
                         return (
@@ -37,7 +38,7 @@ const Project = ({ title, subTitle, image, index }) => {
     const titleRef = useRef(null);
     const subTitleRef = useRef(null);
     const { width } = useWindowResize();
-    const projectFinalPosition = width < 1024 ? finalPositionSm : finalPosition;
+    const projectFinalPosition = useMemo(() => width < 1254 ? finalPositionSm : finalPosition, [width]);
 
     useGSAP(() => {
 
