@@ -201,7 +201,7 @@ function About() {
                 </div>
                 <div className='fade-in-section w-full min-w-[32rem] max-w-lg rounded-2xl overflow-hidden hidden xl:inline-block relative'>
                     <img ref={imageRef} className='w-full h-full object-cover' src="/assets/1.jpeg" alt="" />
-                    <div ref={overlayRef} className='absolute inset-0 bg-primary-400 transform translate-x-1/2' />
+                    <div ref={overlayRef} className='absolute inset-0 bg-primary-400 transform translate-x-full' />
                 </div>
             </section>
 

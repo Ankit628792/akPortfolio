@@ -31,7 +31,7 @@ function MyProjects({ length = PROJECTS.length, className = "" }) {
 
 export default MyProjects
 
-const Project = ({ title, subTitle, image, index }) => {
+const Project = ({ title, subTitle, image, index, link }) => {
     const projectRef = useRef(null);
     const imageRef = useRef(null);
     const overlayRef = useRef(null);
@@ -85,9 +85,11 @@ const Project = ({ title, subTitle, image, index }) => {
 
     return (
         <div ref={projectRef} className='w-full max-w-xl '>
-            <div className='w-full rounded-2xl overflow-hidden relative'>
+            <div onClick={() => {
+                window.open(link, "_blank");
+            }} className='w-full rounded-2xl overflow-hidden relative cursor-grab active:cursor-grabbing'>
                 <img ref={imageRef} src={image} className='w-full h-full object-cover' alt="" />
-                <div ref={overlayRef} className='absolute inset-0 bg-primary-400 transform translate-x-1/2' />
+                <div ref={overlayRef} className='absolute inset-0 bg-primary-400 transform translate-x-full' />
             </div>
             <div className='mt-4'>
                 <div className="relative flex items-center text-4xl xl:text-5xl font-bold text-white tracking-wider text-container">

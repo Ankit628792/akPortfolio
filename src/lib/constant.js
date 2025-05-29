@@ -35,38 +35,72 @@ export const PROJECTS = [
         subTitle: "Notifies users about mutual love using location.",
         roles: "UX, UI Design, Development",
         image: "/projects/lovealarm.png",
+        link: "https://www.lovealarm.in/"
     },
     {
         title: "ShareBook",
         subTitle: "Share books locally to connect and reduce waste.",
         roles: "UX, UI Design, Development",
         image: "/projects/sharebook.png",
+        link: "https://sharebook.onrender.com/"
     },
     {
         title: "Byrds",
         subTitle: "Helps users and businesses go carbon neutral.",
         roles: "UX, UI Design, Development",
         image: "/projects/byrds.png",
-
+        link: "https://www.byrds.one/"
     },
     {
         title: "Aqqess",
         subTitle: "Manages secure QR-based employee access and tracking.",
         roles: "UX, UI Design, Development",
-        image: "/projects/aqqess.png"
+        image: "/projects/aqqess.png",
+        link: "https://www.aqqess.me/"
     },
     {
         title: "CornerQube",
         subTitle: "Simplifies B2B customer review collection and management.",
         roles: "UX, UI Design, Development",
-        image: "/projects/corner_qube.png"
+        image: "/projects/corner_qube.png",
+        link: "https://www.cornerqube.com/"
+    },
+    {
+        title: "1723",
+        subTitle: "Platform for writing and sharing case studies, research, and reports with engagement and rewards.",
+        roles: "UX, UI Design, Development",
+        image: "/projects/1723.png",
+        link: "https://www.1723.quest/"
+    },
+
+    {
+        title: "Greyffiti",
+        subTitle: "Real-time design and document collaboration tool.",
+        roles: "UX, UI Design, Development",
+        image: "/projects/greyffiti.png",
+        link: "https://www.greyffiti.com/"
     },
     {
         title: "Rekindle",
         subTitle: "Dating app for those seeking second chances.",
         roles: "UX, UI Design, Development",
         image: "/projects/rekindle.png",
+        link: "https://linktr.ee/rekindleclub"
     },
+    {
+        title: "En4ce",
+        subTitle: "An initiative to empower learning through community-driven mentorship in tech and soft skills.",
+        roles: "UX, UI Design, Development",
+        image: "/projects/en4ce.png",
+        link: "https://www.en4ce.org/"
+    },
+    {
+        title: "Benny Bland",
+        subTitle: "A satirical merch store offering personalized, eco-friendly fashion.",
+        roles: "UX, UI Design, Development",
+        image: "/projects/benny_bland.png",
+        link: "https://bennybland.azurewebsites.net/"
+    }
 ];
 
 
