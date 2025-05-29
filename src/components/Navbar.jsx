@@ -125,12 +125,12 @@ function Navbar({ delay = 1 }) {
                     </MagneticEffect>
                 </div>
                 <MagneticEffect>
-                    <div className={'flex flex-col items-center justify-center gap-1.5 bg-white bg-opacity-20 rounded-full p-1 w-16 h-16 cursor-pointer z-50 group relative ' + (active ? "" : "hover:bg-opacity-30")} onClick={handleNav}>
+                    <div className={'flex flex-col items-center justify-center gap-1.5 bg-white dark:bg-gray-50 dark:bg-opacity-50 bg-opacity-20 rounded-full p-1 w-16 h-16 cursor-pointer z-50 group relative ' + (active ? "" : "hover:bg-opacity-30")} onClick={handleNav}>
                         {active && <div className='absolute rounded-full inset-0 bg-primary-500 transform scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out origin-bottom'></div>}
                         <div className='flex flex-col items-center justify-center gap-1.5 menu relative'>
-                            <div className='w-10 h-1 rounded-full bg-white line1'></div>
-                            <div className='w-7 h-1 mr-auto rounded-full bg-white line2'></div>
-                            <div className='w-4 h-1 mr-auto rounded-full bg-white line3'></div>
+                            <div className='w-10 h-1 rounded-full bg-white dark:bg-gray-50 line1'></div>
+                            <div className='w-7 h-1 mr-auto rounded-full bg-white dark:bg-gray-50 line2'></div>
+                            <div className='w-4 h-1 mr-auto rounded-full bg-white dark:bg-gray-50 line3'></div>
                         </div>
                     </div>
                 </MagneticEffect>

@@ -50,7 +50,7 @@ export default function StringSVG({ text, textClass, wrapperClass = "min-h-scree
             <section className={" flex flex-col items-center justify-center " + wrapperClass}>
                 <div onMouseMove={manageMouseMove} onMouseLeave={manageMouseLeave} className="line w-full relative cursor-grab bg-black hide-cursor">
                     <svg className="w-full h-40 top-0">
-                        <path ref={path} strokeWidth={1} stroke={stroke}></path>
+                        <path ref={path} strokeWidth={1} stroke={stroke} fill="none"></path>
                     </svg>
                     {text && <p className={"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 " + textClass}>{text}</p>}
                 </div>

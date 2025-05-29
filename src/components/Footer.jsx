@@ -109,10 +109,10 @@ const Footer = () => {
                                     alt=""
                                 />
                             </a>
-                            <MoveText text={"work"} initalTextClass={"text-primary-400"} finalTextClass={"text-primary-400"} />
+                            <MoveText text={"work"} finalText={"grow"} wrapperClass='pr-4' initalTextClass={"text-primary-400"} finalTextClass={"text-primary-400"} />
                         </div>
                         <div className="flex items-center gap-2.5 sm:gap-5 group">
-                            <MoveText text={"together"} initalTextClass={"text-primary-400"} finalTextClass={"text-primary-400"} />
+                            <MoveText wrapperClass='pr-2' text={"together"} finalText={"amazing"} initalTextClass={"text-primary-400"} finalTextClass={"text-primary-400"} />
                             <div className='h-12 sm:h-16 md:h-20 shrink-0 overflow-hidden'>
                                 <img
                                     className="h-12 sm:h-16 md:h-20 shrink-0 group-hover:rotate-360 origin-bottom duration-1000 ease-in-out"
@@ -146,7 +146,7 @@ const Footer = () => {
                 {/* Call to Action */}
                 <div className="h-40 sm:h-52 flex flex-col justify-center">
                     <div className="relative h-32 sm:h-40 md:h-52 flex flex-col justify-center w-full">
-                        <div className="w-full h-[0.5px] bg-white relative" />
+                        <div className="w-full h-[0.5px] bg-white dark:bg-gray-100 relative" />
                         <div
                             ref={ctaRef}
                             className="absolute w-32 sm:w-40 h-32 sm:h-40 md:h-52 md:w-52 left-auto right-0 md:right-10 lg:right-20 top-0 bottom-0 flex flex-col items-center justify-center"
