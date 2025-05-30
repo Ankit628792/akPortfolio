@@ -83,11 +83,43 @@ const Project = ({ title, subTitle, image, index, link }) => {
         )
     }, [width])
 
+    const handleMouseEnter = () => {
+
+        gsap.to("#custom_cursor", {
+            scale: 8,
+            duration: 0.3,
+            ease: "power2.out",
+        });
+        gsap.to("#cursor_text", {
+            opacity: 1,
+            scale: 0.8,
+            duration: 0.2,
+            ease: "power2.out",
+        });
+    };
+
+    const handleMouseLeave = () => {
+        gsap.to("#custom_cursor", {
+            scale: 1,
+            duration: 0.3,
+            ease: "power2.out",
+        });
+        gsap.to("#cursor_text", {
+            opacity: 0,
+            duration: 0.2,
+            ease: "power2.out",
+        });
+    };
+
+
     return (
-        <div ref={projectRef} className='w-full max-w-xl '>
+        <div
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            ref={projectRef} className='w-full max-w-xl '>
             <div onClick={() => {
                 window.open(link, "_blank");
-            }} className='w-full rounded-2xl overflow-hidden relative cursor-grab active:cursor-grabbing'>
+            }} className='w-full rounded-2xl overflow-hidden relative cursor-none'>
                 <img ref={imageRef} src={image} className='w-full h-full object-cover' alt="" />
                 <div ref={overlayRef} className='absolute inset-0 bg-primary-400 transform translate-x-full' />
             </div>

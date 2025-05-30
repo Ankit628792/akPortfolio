@@ -79,9 +79,14 @@ const CustomCursor = () => {
                 className="pointer-events-none fixed top-0 left-0 z-[9998] w-20 h-20 rounded-full bg-gradient-to-tr from-primary-400 to-primary-500 opacity-30 blur-xl transition-transform duration-200 hidden lg:inline-block"
             />
             <div
+                id='custom_cursor'
                 ref={cursorRef}
-                className="pointer-events-none fixed top-0 left-0 z-[9999] w-4 h-4 rounded-full bg-primary-400 transition-opacity duration-200 hidden lg:inline-block"
-            />
+                className="pointer-events-none fixed top-0 left-0 z-[9999] w-4 h-4 rounded-full bg-primary-400 transition-opacity duration-200 hidden lg:inline-flex flex-col items-center justify-center"
+            >
+                <div id="cursor_text" className='text-white flex flex-col items-center justify-center gap-1 sm:gap-2 relative z-10 opacity-0 transition-opacity duration-300'>
+                    <h1 className='text-[4px] text-center text-white -mt-[2px]'>Link <span className='text-[6px]'>&#10532;</span></h1>
+                </div>
+            </div>
         </>
     );
 };
