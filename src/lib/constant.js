@@ -88,11 +88,11 @@ export const PROJECTS = [
         link: "https://linktr.ee/rekindleclub"
     },
     {
-        title: "En4ce",
-        subTitle: "An initiative to empower learning through community-driven mentorship in tech and soft skills.",
+        title: "The Neuron Club",
+        subtitle: "Predict real-world events, earn rewards, and stay informed through play.",
         roles: "UX, UI Design, Development",
-        image: "/projects/en4ce.png",
-        link: "https://www.en4ce.org/"
+        image: "/projects/the_neuron_club.png",
+        link: "https://neuron-club.vercel.app/"
     },
     {
         title: "Benny Bland",
@@ -100,7 +100,23 @@ export const PROJECTS = [
         roles: "UX, UI Design, Development",
         image: "/projects/benny_bland.png",
         link: "https://bennybland.azurewebsites.net/"
+    },
+    {
+        title: "Threadality",
+        subTitle: "Company portfolio website showcasing software products, innovation practices, and collaborative culture.",
+        roles: "UX, UI Design, Web Development",
+        image: "/projects/threadality.png",
+        link: "https://www.threadality.com/"
+    },
+    {
+        title: "Morphline Studio",
+        subTitle: "A boutique design and development studio crafting impactful digital experiences through design thinking and modern tech.",
+        roles: "Branding, UX/UI Design, Development, Testing",
+        image: "/projects/morphline_studio.png",
+        link: "https://www.morphline.studio/"
     }
+
+
 ];
 
 
