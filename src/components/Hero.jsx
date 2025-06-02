@@ -16,7 +16,6 @@ export default function Hero() {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const subTextRef = useRef(null);
-  const buttonRef = useRef(null);
   const topRightRef = useRef(null);
   const bottomLeftRef = useRef(null);
   const bottomRightRef = useRef(null);
@@ -42,9 +41,12 @@ export default function Hero() {
           duration: 1,
           ease: "power2.out",
         }, "-=0.6")
-        .from(buttonRef.current, {
-          scale: 0.8,
+        .fromTo(".all_projects_btn", {
           opacity: 0,
+          y: 40
+        }, {
+          opacity: 1,
+          y: 0,
           duration: 0.8,
           ease: "back.out(1.7)",
         }, "-=0.6")
@@ -96,9 +98,7 @@ export default function Hero() {
           <Link href="/projects">
             <MagneticEffect>
               <button
-                ref={buttonRef}
-
-                className="mt-4 sm:mt-6 bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group"
+                className="all_projects_btn mt-4 sm:mt-6 bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group opacity-100 scale-100"
               >
                 <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"View All Projects"}></MoveText>
               </button>
@@ -118,7 +118,7 @@ export default function Hero() {
         </div>
 
         {/* Center Animation */}
-        <div ref={buttonRef} className="hidden md:block">
+        <div className="hidden md:block">
           <StringSVG stroke="#b3b2fb" wrapperClass="md:mt-60 min-h-[60dvh]" text={"Powers I hold"} textClass="text-6xl lg:text-7xl text-primary-400 opacity-10 exile" />
         </div>
 

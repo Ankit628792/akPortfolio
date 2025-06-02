@@ -11,7 +11,6 @@ export default function About() {
   const sectionRef = useRef(null);
   const headingRef = useRef(null);
   const paragraphRef = useRef(null);
-  const buttonRef = useRef(null);
   const scrollRef = useRef(null);
   const imageRef = useRef();
 
@@ -36,7 +35,7 @@ export default function About() {
         "-=0.6"
       )
       .fromTo(
-        buttonRef.current,
+        '.get_in_touch',
         { opacity: 0, y: 40 },
         { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" },
         "-=0.6"
@@ -82,14 +81,13 @@ export default function About() {
             </div>
             <MagneticEffect>
               <button
-                ref={buttonRef}
                 onClick={() => {
                   window.scrollTo({
                     top: document.documentElement.scrollHeight,
                     behavior: 'smooth',
                   })
                 }}
-                className="bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group"
+                className="get_in_touch bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group"
               >
                 <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"Get in touch"}></MoveText>
               </button>
