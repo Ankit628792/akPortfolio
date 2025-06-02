@@ -9,6 +9,7 @@ import { Mail } from 'lucide-react'
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import { enqueueSnackbar, SnackbarProvider } from 'notistack'
 gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
@@ -53,12 +54,13 @@ function Contact() {
 
     return (
         <>
+            <SnackbarProvider maxSnack={1} />
             <Navbar />
             <section ref={sectionRef} className='flex flex-col items-center justify-end md:justify-center w-full min-h-[80dvh] md:min-h-screen bg-gradient-to-b from-gray-950 to-[#141416] p-5'>
                 <h1 ref={titleRef} className='text-6xl sm:text-7xl lg:text-[11vw] max-w-7xl font-bold ankit text-center exile text-gray-100 !leading-[1]'>Drop Email</h1>
                 <div onClick={() => {
+                    enqueueSnackbar('Copied to clipboard', { key: "email", preventDuplicate: true, timeout: 10, variant: "info", className: "!bg-primary-400", anchorOrigin: { vertical: "bottom", horizontal: "right" } });
                     navigator.clipboard.writeText(EmailID);
-                    alert('Copied to clipboard');
                 }} className='group text-center flex items-center gap-2 mt-4'>
                     <p className='text-lg sm:text-xl lg:text-2xl max-w-xl md:max-w-2xl lg:max-w-3xl text-gray-500 group-hover:text-primary-400 transition-all duration-300 ease-out'>
                         <Mail />
