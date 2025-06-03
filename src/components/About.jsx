@@ -35,7 +35,7 @@ export default function About() {
         "-=0.6"
       )
       .fromTo(
-        '.get_in_touch',
+        '.about_me_btn',
         { opacity: 0, y: 40 },
         { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" },
         "-=0.6"
@@ -79,19 +79,13 @@ export default function About() {
                 I love crafting digital experiences that not only look good but also feel natural and useful. My work connects innovation with real people’s needs.
               </p>
             </div>
-            <MagneticEffect>
-              <button
-                onClick={() => {
-                  window.scrollTo({
-                    top: document.documentElement.scrollHeight,
-                    behavior: 'smooth',
-                  })
-                }}
-                className="get_in_touch bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group"
-              >
-                <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"Get in touch"}></MoveText>
-              </button>
-            </MagneticEffect>
+            <a href="/about">
+              <MagneticEffect>
+                <button className="about_me_btn bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group">
+                  <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"About me"}></MoveText>
+                </button>
+              </MagneticEffect>
+            </a>
           </div>
         </div>
 

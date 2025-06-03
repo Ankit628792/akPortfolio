@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import TransitionProvider from "@/components/effects/TransitionProvider";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -79,7 +80,8 @@ export default function RootLayout({ children }) {
         <Script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" strategy="beforeInteractive" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}> <TransitionProvider>{children}</TransitionProvider></body>
+
     </html>
   );
 }

@@ -6,7 +6,9 @@ import { useGSAP } from '@gsap/react';
 
 function Header() {
     useGSAP(() => {
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            delay: 1
+        });
 
         tl.to('.loader .text', {
             width: '100%',

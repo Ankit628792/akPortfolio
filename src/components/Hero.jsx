@@ -95,7 +95,7 @@ export default function Hero() {
           <p ref={subTextRef} className="mt-3 text-base sm:text-lg text-gray-300 poppins">
             Craft engaging digital experiences that feel intuitive, meaningful, and built to last.
           </p>
-          <Link href="/projects">
+          <a href="/projects">
             <MagneticEffect>
               <button
                 className="all_projects_btn mt-4 sm:mt-6 bg-white text-gray-500 py-2 px-4 sm:py-3 sm:px-6 rounded-full hover:bg-primary-400 hover:text-white transition-all duration-200 ease-out poppins group opacity-100 scale-100"
@@ -103,7 +103,7 @@ export default function Hero() {
                 <MoveText finalTextClass="text-white" initalTextClass="text-gray-500" text={"View All Projects"}></MoveText>
               </button>
             </MagneticEffect>
-          </Link>
+          </a>
         </div>
 
         {/* Top Right Text */}

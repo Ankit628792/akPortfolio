@@ -15,7 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact() {
     const sectionRef = useRef(null);
     const titleRef = useRef(null);
-    const iconRef = useRef(null);
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -29,6 +28,7 @@ function Contact() {
                 opacity: 0,
                 y: 50,
                 duration: 1.2,
+                delay: 1,
                 ease: 'power3.out',
                 scrollTrigger: {
                     trigger: titleRef.current,
@@ -36,15 +36,27 @@ function Contact() {
                 },
             });
 
-            gsap.from(iconRef.current, {
+            gsap.from(".email_id", {
                 opacity: 0,
                 y: 30,
                 duration: 1,
                 ease: 'power3.out',
-                delay: 0.3,
+                delay: 1.2,
                 scrollTrigger: {
-                    trigger: iconRef.current,
-                    start: 'top 90%',
+                    trigger: ".email_id",
+                    start: 'top 85%',
+                },
+            });
+
+            gsap.from(".scroll_down", {
+                opacity: 0,
+                y: 30,
+                duration: 1,
+                ease: 'power3.out',
+                delay: 1.5,
+                scrollTrigger: {
+                    trigger: ".scroll_down",
+                    start: 'top 85%',
                 },
             });
         }, sectionRef);
@@ -61,14 +73,14 @@ function Contact() {
                 <div onClick={() => {
                     enqueueSnackbar('Copied to clipboard', { key: "email", preventDuplicate: true, timeout: 10, variant: "info", className: "!bg-primary-400", anchorOrigin: { vertical: "bottom", horizontal: "right" } });
                     navigator.clipboard.writeText(EmailID);
-                }} className='group text-center flex items-center gap-2 mt-4'>
+                }} className='group text-center flex items-center gap-2 mt-4 email_id'>
                     <p className='text-lg sm:text-xl lg:text-2xl max-w-xl md:max-w-2xl lg:max-w-3xl text-gray-500 group-hover:text-primary-400 transition-all duration-300 ease-out'>
                         <Mail />
                     </p>
                     <MoveText text={EmailID} wrapperClass='text-lg sm:text-xl lg:text-2xl max-w-xl md:max-w-2xl lg:max-w-3xl' initalTextClass='text-gray-500' finalTextClass='text-primary-400' />
                 </div>
                 <MagneticEffect>
-                    <div ref={iconRef} className="col-span-2 flex flex-col items-center mt-16 cursor-grab">
+                    <div className="col-span-2 flex flex-col items-center mt-16 cursor-grab scroll_down">
                         <div className="text-sm poppins text-gray-500">Scroll Down</div>
                         <svg
                             className="w-6 h-10 text-gray-400 animate-bounce"
