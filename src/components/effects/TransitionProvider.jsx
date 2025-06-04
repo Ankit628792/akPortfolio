@@ -8,7 +8,6 @@ export default function TransitionProvider({ children }) {
   const pathname = usePathname();
   const [displayChildren, setDisplayChildren] = useState(children);
   const overlayRef = useRef([]);
-  const contentRef = useRef(null);
 
   // Animate panels IN (exit) and swap page content
   useEffect(() => {
@@ -40,14 +39,6 @@ export default function TransitionProvider({ children }) {
       stagger: 0.1,
     });
 
-    // Fade in new content
-    tl.fromTo(
-      contentRef.current,
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' },
-      '-=0.6' // start overlapping toward the end of panel animation
-    );
-
     return () => tl.kill();
   }, [displayChildren]);
 
@@ -56,14 +47,14 @@ export default function TransitionProvider({ children }) {
       <div className="fixed top-0 left-0 w-full h-full z-[9999] pointer-events-none overflow-hidden">
         <div
           ref={overlayRef}
-          className="absolute inset-0 w-full h-full bg-primary-400"
+          className="absolute inset-0 w-full h-full bg-primary-400 grid place-items-center"
           style={{ zIndex: 9999 }}
-        />
+        >
+          <img src="/ank.svg" className='w-12 sm:w-14' alt="Logo" />
+        </div>
       </div>
 
-      <div ref={contentRef} className="relative z-10 opacity-0">
-        {displayChildren}
-      </div>
+      {displayChildren}
     </>
   );
 }

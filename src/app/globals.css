@@ -144,3 +144,50 @@ a {
   border-radius: 50%;
   filter: blur(5vw);
 }
+
+
+
+/* SHN  */
+.loading_ball {
+  animation: bouncing 1s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes bouncing {
+  0% {
+    scale: 1;
+    top: 50%;
+
+  }
+
+  50% {
+    scale: 1.05 0.9;
+    top: 60%;
+
+  }
+
+  100% {
+    scale: 1;
+    top: 50%;
+  }
+}
+
+.loading_ball_base {
+  animation: bouncing_base 1s ease-in-out infinite;
+  top: 64%;
+  transform-origin: left center;
+}
+
+@keyframes bouncing_base {
+  0% {
+    scale: 1.5 1;
+  }
+
+  50% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.5 1;
+  }
+}
