@@ -143,7 +143,7 @@ const Question = ({ setAnswered }) => {
 
     return (
         <div className=' w-full flex flex-col items-center justify-center gap-6 question'>
-            <h1 className='text-4xl font-medium'>Let's Go for a Walk??</h1>
+            <h1 className='text-4xl font-medium'>Let&apos;s Go for a Walk??</h1>
             <img className='w-60 h-60' src="/shn/walk.gif" alt="" />
             <div className='flex items-center gap-4 mt-6'>
                 <button onClick={onOkClick} className='bg-black text-white px-10 py-2 rounded-full text-xl transform origin-left z-10' style={{ scale }}>Yes</button>
