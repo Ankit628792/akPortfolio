@@ -141,7 +141,7 @@ export const EXPERIENCES = [
         company: "Appinventiv",
         role: "Senior Software Engineer",
         primaryTech: "React Native",
-        period: "Oct 2024 - Current",
+        period: "Oct 2024 - Sep 2025",
         logo: "/assets/appinventiv.jpeg",
         website: "https://www.linkedin.com/company/appinventiv"
     },
