@@ -152,7 +152,7 @@ export default function Hero() {
           ref={bottomRightRef}
           className="md:absolute z-10 bottom-0 right-0 sm:max-w-sm md:text-right group"
         >
-          <MoveText wrapperClass="pr-8 cursor-auto" finalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" initalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max !leading-none" text={"3+ Years Of Experience"} finalText={"writes stories via code"} />
+          <MoveText wrapperClass="pr-8 cursor-auto" finalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max" initalTextClass="text-primary-400 poetsen-one font-bold text-xl min-w-max !leading-none" text={"4+ Years Of Experience"} finalText={"writes stories via code"} />
           <p className="text-base mt-2 text-gray-300 poppins">
             Building thoughtful products that balance innovation with real user needs — from backend logic to beautiful interfaces.
           </p>
